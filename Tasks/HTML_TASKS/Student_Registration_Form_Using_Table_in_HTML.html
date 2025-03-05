@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor="lightblue">
+    <form action="">
+        <fieldset>
+            <table cellpadding="7">
+                <tr>
+                    <td><label for="">Firstname</label></td>
+                    <td><input type="text" placeholder="Enter your name" required maxlength="50" title="Name"></td>
+                   
+                </tr>
+                <tr>
+                    <td><label for="">Lastname</label></td>
+                    <td><input type="text" placeholder="Enter your Lastname" required maxlength="50" title="Lastname">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Email</label></td>
+                    <td> <input type="email" placeholder="Enter your Email" required
+                            pattern="[a-z0-9.]+@[a-z]+.[a-z]+{2,3}">
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="">Mobile Number</label></td>
+                    <td><input type="tel" placeholder="Enter your Mobile Number" required minlength="10" maxlength="10"
+                            pattern="[0-9]+"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender:</label> </td> <br>
+                    <td><input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth (DOB)</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td> <label for="Address">Address:</label> </td>
+                    <td> <textarea name="Address" id="Address" required rows="10" cols="30"
+                            placeholder="Enter your Address"></textarea> </td>
+                </tr>
+                <tr>
+                    <td><label for="">City</label></td>
+                    <td><input type="text" placeholder="Enter your city name" required maxlength="50"></td>
+                   
+                </tr>
+                <tr>
+                    <td><label for="">Pin Code</label></td>
+                    <td><input type="tel" placeholder="Enter your Pin Code" required maxlength="6"></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="">State</label></td>
+                    <td><input type="text" placeholder="Enter your State name" required maxlength="50"></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="">Country</label></td>
+                    <td><input type="text" placeholder="Enter your Country name" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Hobbies</label>
+                    </td>
+                    <td><input type="checkbox">Drawing
+                        <input type="checkbox">Singing
+                        <input type="checkbox">Dancing
+                        <input type="checkbox">Sketching
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox">Others <input type="text" placeholder="Ex-Teaching">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Qualifications</label>
+                    </td>
+                    <td><input type="checkbox">High School(10th) <br>
+                        <input type="checkbox">Higher School(12th) <br>
+                        <input type="checkbox">Graduation (Batchlors) <br>
+                        <input type="checkbox">Post Graduation (Masters) <br>
+                        <input type="checkbox">PHD
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Courses Applies for</label></td>
+                    <td><input type="radio">BCA <br>
+                        <input type="radio">B.com. <br>
+                        <input type="radio">B.Sc. <br>
+                        <input type="radio">B.A. <br>
+                        <input type="radio">M.C.A. <br>
+                        <input type="radio">M.Com. <br>
+                        <input type="radio">M.Sc. <br>
+                        <input type="radio">M.A. <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="submit"> <input type="reset"> </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

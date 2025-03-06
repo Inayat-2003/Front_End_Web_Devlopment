@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="">Firstname:</label>
+            <input type="text" placeholder="Enter your name" required title="Name">
+        </div> <br>
+        <div>
+            <label for="">Middlenme:</label>
+            <input type="text" placeholder="Enter your Middlename" required title="Middlename">
+        </div> <br>
+        <div>
+            <label for="">Lastname:</label>
+            <input type="text" placeholder="Enter your Lastname" required title="Lastname">
+        </div> <br>
+        <div>
+            <label for="">Course:</label>
+            <select required>
+                <option value="" hidden>course</option>
+                <option value="">HTML</option>
+                <option value="">CSS</option>
+                <option value="">C+</option>
+                <option value="">C++</option>
+                <option value="">React JS</option>
+            </select>
+        </div> <br>
+        <div>
+            <label for="">Gender:</label> <br>
+            <input type="radio" name="Gender">Male <br>
+            <input type="radio" name="Gender">Female <br>
+            <input type="radio" name="Gender">Other <br>
+        </div> <br>
+        <div>
+            <label for="">Phone :</label>
+            <select name="" id="">
+                <option value="" selected>+91</option>
+            </select>
+            <input type="tel" required minlength="10" maxlength="10" pattern="[0-9]+">
+        </div> <br>
+        <div>
+            <label for="">Address:</label> <br>
+            <textarea name="" id="" required rows="10" cols="30" placeholder="Enter your Address"></textarea>
+        </div> <br>
+        <div>
+            <label for="Email">Email</label>
+            <input type="email" required pattern="[a-z0-9]+@[a-z]+.[a-z]{2,3}">
+        </div> <br>
+        <div>
+            <label for="">Password:</label>
+            <input type="password" placeholder="Enter your password" required pattern="[0-9]{8}">
+        </div> <br>
+        <div>
+            <label for="">Re-type Password:</label>
+            <input type="password" placeholder="Re-enter your password" required pattern="[0-9]{8}">
+        </div> <br>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

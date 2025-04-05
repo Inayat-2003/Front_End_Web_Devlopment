@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Header */
+#header{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px auto;
+}
+
+/* Logo container & Logo */
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin: 30px 20px;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+}
+.navlink{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+.navlink:hover{
+    background-color: rgb(22, 22, 107);
+}
+
+/* Dropdown */
+.dropdown{
+    position: relative;
+}
+.dropdown-toggl{
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown-toggl:hover{
+    background-color: rgb(22, 22, 107);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: blue;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-item{
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown-item:hover{
+    background-color: rgb(22, 22, 107);
+}
+
+/* Sub-dropdown */
+.sub-dropdown{
+    position: relative;
+}
+.sub-dropdown-toggle{
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+.sub-dropdown-toggle:hover{
+    background-color: rgb(22, 22, 107);
+}
+.sub-dropdown-content{
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: blue;
+}
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+.sub-dropdown-item{
+    text-decoration: none;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+.sub-dropdown-item:hover {
+    background-color: rgb(22, 22, 107);
+}
+
+/* Login Btn */
+.login-btn{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 12px 16px;
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: yellowgreen;
+}

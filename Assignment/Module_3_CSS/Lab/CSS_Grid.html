@@ -1,0 +1,171 @@
+<!-- 
+ Create a 3x3 grid of product cards using CSS Grid. Each card should contain: 
+1) A product image. 
+2) A product title. 
+3) A price. 
+ 
+Additional Requirements: 
+1) Use grid-template-columns to create the grid layout.  
+2) Use grid-gap to add spacing between the grid items. 
+3) Apply hover effects to each card for better interactivity.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 70px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px 5px;
+            width: 100%;
+        }
+        .card {
+            width: 350px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #717abb;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.4s, background-color 0.4s;
+            text-align: center;
+            padding: 15px;
+        }
+        .img {
+            width: 100%;
+            border-radius: 8px;
+            height: 70%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: clamp(10px, 2.5vw, 22px);
+        }
+
+        .card p {
+            color: red;
+            font-size: clamp(7px, 2.5vw, 18px);
+            font-weight: bold;
+        }
+
+        /* css for hover effect */
+        .card:hover {
+            transform: scale(1.3);
+            background-color: #a1c424;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/3954388/pexels-photo-3954388.jpeg">
+            </div>
+            <div class="text">
+                <h3>Mercedes-Benz G-Class<h3>
+                <p>Price:$163,700</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/6462662/pexels-photo-6462662.png">
+            </div>
+            <div class="text">
+                <h3>Lamborgini<h3>
+                <p>Price:$560,000</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/707046/pexels-photo-707046.jpeg">
+            </div>
+            <div class="text">
+                <h3>BMW<h3>
+                <p>Price:$475,000</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/3894065/pexels-photo-3894065.jpeg">
+            </div>
+            <div class="text">
+                <h3>Rolls Royce Boat Tail<h3>
+                <p>Price:$28 Million</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg">
+            </div>
+            <div class="text">
+                <h3>Rolls Royce phantom<h3>
+                <p>Price:$517,750</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg">
+            </div>
+            <div class="text">
+                <h3>Mercedes-Benz G-Class S-680<h3>
+                <p>Price:$240,500</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/3954388/pexels-photo-3954388.jpeg">
+            </div>
+            <div class="text">
+                <h3>Mercedes-Benz classic<h3>
+                <p>Price:$63,560</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/119435/pexels-photo-119435.jpeg">
+            </div>
+            <div class="text">
+                <h3>Jeep<h3>
+                <p>Price:$101,890</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="https://images.pexels.com/photos/7402641/pexels-photo-7402641.jpeg">
+            </div>
+            <div class="text">
+                <h3>Thar<h3>
+                <p>Price:$24,400</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

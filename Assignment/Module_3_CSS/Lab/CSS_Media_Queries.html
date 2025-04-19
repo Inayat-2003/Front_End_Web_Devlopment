@@ -1,0 +1,167 @@
+<!-- Lab Assignment:
+Build a responsive webpage that includes:
+1) A navigation bar.
+2) A content section with two columns.
+3) A footer.
+
+Additional Requirements:
+1) Use media queries to make the webpage responsive for mobile devices.
+2) On smaller screens (below 768px), stack the columns vertically.
+3) Adjust the font sizes and padding to improve readability on mobile.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Navstarts */
+        .list {
+            background-color: bisque;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .list .navlist {
+            display: inline-block;
+            background-color: orange;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        .navlist::after {
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: blue;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .navlist:hover::after {
+            width: 100%;
+        }
+
+        /* Section starts */
+        .row {
+            display: flex;
+        }
+
+        .col1 {
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+        .col2 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+        }
+        h1 {
+            text-decoration: underline;
+            margin: 5% 0;
+            font-size: clamp(20px, 3vw, 61px);
+            font-family: "Righteous", sans-serif;
+            font-weight: 400;
+        }
+
+        .text{
+            padding: 10px;
+            font-size: clamp(16px, 3vw, 25px);
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            margin: 30px 0;
+        }
+        p{
+            padding: 15px 0;
+        }
+
+        /* footer starts */
+        .footer {
+            background-color: blue;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 10px;
+        }
+        .p-footer{
+            font-size: clamp(16px, 3vw, 25px);   
+        }
+
+        /* Media */
+        @media (max-width: 768px) {
+            .list{
+                flex-direction: column;
+                text-align: center;
+            }
+            .navlist::after{
+                display: none;
+            }
+            .row{
+                display: block;
+            }
+            .col1, .col2{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav -->
+    <header id="nav">
+        <ul class="list">
+            <li class="navlist">Home</li>
+            <li class="navlist">About</li>
+            <li class="navlist">Men's Wear</li>
+            <li class="navlist">Short Codes</li>
+            <li class="navlist">Contact</li>
+        </ul>
+    </header>
+
+    <!-- Section -->
+    <section id="section">
+        <div class="row">
+            <div class="col1">
+                <h1>HTML</h1>
+                <div class="text">
+                    <p>The HTML uses a long and complex doctype declaration, making it harder to remember.</p>
+                    <p>It includes outdated elements like font, center, and big.</p>
+                    <p>Generally it requires external plugins like Flash or Silverlight for audio and video.</p>
+                    <p>HTML has limited input types, requiring JavaScript for form validation.</p>
+                </div>
+            </div>
+            <div class="col2">
+                <h1>HTML5</h1>
+                <div class="text">
+                    <p>The HTML5 simplifies it to !DOCTYPE html, making it easier to use.</p>
+                    <p>It removes these, promoting CSS for styling and layout.</p>
+                    <p>The HTML5 introduces audio and video elements for native media support.</p>
+                    <p>HTML5 adds new input types like email, date, and number, along with attributes like placeholder
+                        and required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p class="p-footer">&copy; All rights reserved</p>
+    </div>
+</body>
+
+</html>

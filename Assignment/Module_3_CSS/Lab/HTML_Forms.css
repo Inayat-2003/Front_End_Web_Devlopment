@@ -1,0 +1,38 @@
+#form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+}
+h1{
+    color: chartreuse;
+    text-decoration: underline;
+}
+h3{
+    padding: 10px 0;
+    color: yellow;
+}
+#table{
+    margin-bottom: 10%;
+}
+#table td{
+    padding: 20px 0 ;
+}
+#table input{
+    padding: 7px 0;
+    border-color: darkblue;
+    border-radius: 10px;
+}
+#table textarea{
+    border-radius: 15px;
+    border-color: blue;
+    padding: 20px 0;
+}
+.list{
+    padding: 10px 15px;
+    background-color: aqua;
+}
+.btn{
+    background-color: chocolate;
+    padding: 10px 15px;
+}

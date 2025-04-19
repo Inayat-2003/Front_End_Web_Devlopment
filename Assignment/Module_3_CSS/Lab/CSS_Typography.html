@@ -1,0 +1,244 @@
+<!-- 
+ Create a blog post layout with the following: 
+1) A title, subtitle, and body content. 
+2) Use at least two different fonts (one for headings, one for body content).
+3) Style the text to be responsive and easy to read. 
+ 
+Additional Requirements: 
+1. Use a custom font from Google Fonts. 
+2. Adjust line-height, font-size, and spacing for improved readability. 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Linking with Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styling -->
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        nav {
+            background-color: blanchedalmond;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        ul li {
+            font-size: clamp(10px, 2.5vw, 18px);
+            margin: 10px 10px;
+            display: inline-block;
+            background-color: orange;
+            padding: 10px 20px;
+        }
+
+        .bar {
+            display: none;
+        }
+
+        #header .h1 {
+            font-size: clamp(16px, 3vw, 50px);
+            letter-spacing: 2px;
+            color: #2b3c53;
+            font-family: cursive;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        #header .h3 {
+            font-size: clamp(10px, 2.5vw, 25px);
+            color: #99bc1bc0;
+            font-weight: 400;
+            font-family: "Righteous", sans-serif;
+            text-align: center;
+        }
+
+        #main {
+            padding: 5%;
+            margin-top: 10px;
+        }
+
+        #main .img {
+            height: 450px;
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .text {
+            margin: 15px 0;
+        }
+
+        h2 {
+            font-size: clamp(11px, 3vw, 32px);
+            background-color: aquamarine;
+        }
+
+        .h4 {
+            font-size: clamp(7px, 2.5vw, 18px);
+            margin-top: 30px;
+            background-color: antiquewhite;
+            padding: 20px 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700;
+        }
+
+        .para1 {
+            font-size: clamp(7px, 2.5vw, 18px);
+            padding: 10px 0;
+            background-color: antiquewhite;
+            font-family: monospace;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .para {
+            font-size: clamp(5px, 2.5vw, 16px);
+            padding: 10px 0;
+            font-family: "Playwrite AU SA", cursive;
+            font-weight: 700;
+        }
+
+        .footer {
+            background-color: blue;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 10px;
+        }
+
+        .p-footer {
+         display: none;
+        }
+
+        .btn {
+            height: 30px;
+            width: 100px;
+            background-color: white;
+        }
+
+        .btn:hover {
+            background-color: yellowgreen;
+        }
+
+
+        /* Media */
+        @media (max-width: 768px) {
+            nav{
+                justify-content: end;
+            }
+            .list {
+                display: none;
+            }
+
+            .bar {
+                display: block;
+                padding: 10px;
+            }
+            .btn{
+                display: none;
+            } 
+            .p-footer{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1 class="h1">Transcendent God_Rational World</h1>
+        <h3 class="h3">This blog aims to provide logical responses to some common objections</h3>
+        <nav>
+            <ul class="list">
+                <li>Home</li>
+                <li>Intro</li>
+                <li>Theology</li>
+                <li>Responses</li>
+                <li>Contact</li>
+            </ul>
+            <i class="fa-solid fa-bars bar"></i>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="title">
+            <img src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg" alt="" class="img">
+            <h2 class="h2">Human actions and Divine Will</h2>
+        </div>
+        <div class="text">
+            <h4 class="h4">Abstract:</h4>
+            <p class="para1"> The doctrine of occasionalism ascribes all causal power to God. Although human being is
+                accountable for moral responsibility. This article aims to clarify and elaborate relation between Divine
+                will and Human free will. God is the one who created us, our qualities, capabilities and our actions. He
+                is
+                also sustaining our existance and existance of these qualities - from moment to moment.
+                Free will somewhere between the inclination and the action to which it leads. For example: " the thought
+                and desire of drinking water is created by God. Our choice between the occurrence of the act of drinking
+                water and its non-occurrence belongs to us. Every part of the act of drinking water, from buying the
+                water,
+                raising the hand, to swallowing water is also
+                created by God. If this man chooses the alternative of drinking water, he acquires the act of drinking
+                water. If he chooses the alternative of not drinking water, he does not acquire this act."</p>
+
+            <p class="para">Well, the universe can be analyzed in terms of two main categories of substance-atom and
+                accident. A substance cannot be found without accidents. Accidents are perishable by nature. No accident
+                can endure or continue to exist if God does not recreate it in its substance. So nothing other than God
+                can have genuine causal power because everything else needs His causal power to remain existent.</p>
+
+            <p class="para">The fundamental principle is that God is the sole creator of everything, which reflects his
+                occasionalistic metaphysics. As a result, no action or human inclination can occur
+                without the power of God. In brief, God continuously recreates every substance
+                and its accidents.</p>
+
+            <p class="para"> An important consequence of this assumption is that natural laws have no independent
+                existence; they are only names referring to the
+                manner of creation of God. For example, there exists no law of universal gravitation, but God creates
+                objects in a manner that fits the formula of the law
+                of universal gravitation. Think of a pencil. If you drop it from a high point
+                above the ground, it falls to the earth. While it falls to the earth, God creates it in different places
+                at every moment according to a definite order. The
+                orderly sequence of created things seems to us to be a natural law. It should
+                be noted that this theory does not admit determinism either because everything
+                occurs as a result of the free will of God, not as a consequence of determinate
+                causal laws. </p>
+
+            <p class="para"> The relation between any two consecutive events is not inevitable
+                as determinism states; on the contrary, it depends on the free will of God. So
+                an event that occurred under some conditions might not occur under the same
+                conditions at some other time, if God did not want it to occur</p>
+
+            <p class="para">
+                Thus we can say that the one who aquires the actions - is responsible for them. God is
+                only attributed with being creator of the action - I.e. the one who brought the act into reality based
+                on
+                petition of man. God doesn't aquire them so He is not accountable for them.</p>
+        </div>
+    </main>
+    <div class="footer">
+        <button class="btn">Like</button>
+        <button class="btn">Follow</button>
+        <button class="btn">Next</button>
+        <p class="p-footer">&copy; All rights reserved</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!-- Lab Assignment -->
+<!-- Style the contact form (created in the HTML Forms lab) using external CSS. Thefollowing should be
+implemented: 
+o Change the background color of the form.
+o Add padding and margins to form fields.
+o Add padding and margins to form fields.
+o Use class selectors for styling common elements and ID selectors for uniqueelements.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/HTML_Forms.css">
+</head>
+
+<body>
+    <form id="form">
+        <table cellspacing="0" id="table">
+            <h1 align="center">Contact Form</h1>
+            <h3 align="center">Please fill required data</h3>
+            <tr class="trow">
+                <th id=""><label for="Name"><big>Full Name:</big></label></th>
+                <td><input type="text" placeholder="Full Name" size="46" required>
+            </tr>
+            <tr class="trow">
+                <th><label for="Email">Email:</label></th>
+                <td><input type="email" placeholder="Enter your Email" size="46" required></td>
+            </tr>
+            <tr class="trow">
+                <th><label for="Phone">Phone:</label></th>
+                <td><input type="tel" maxlength="3" min="2" pattern="[+][0-9]{1,3}" size="4">
+                    <input type="tel" placeholder="Enter your Phone Number" maxlength="10" minlength="10" pattern="[0-9]+"></td>
+            </tr>
+            <tr class="trow">
+                <th>
+                    <select name="Subject" id="" class="list">
+                        <option value="" hidden>Subject:</option>
+                        <option value="">Complain</option>
+                        <option value="">Remark</option>
+                        <option value="">Request</option>
+                        <option value="">Feedback</option>
+                    </select>
+                </th>
+                <td><textarea name="" id="" cols="44" rows="5" required></textarea></td>
+            </tr>
+            <tr class="trow">
+                <th> <button class="btn">Submit</button></th>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

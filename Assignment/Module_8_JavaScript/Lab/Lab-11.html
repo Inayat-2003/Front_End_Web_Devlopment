@@ -1,0 +1,71 @@
+<!-- 
+Task 1:Write a program that changes the background color of a webpage after 5 secondsusing
+setTimeout().
+
+Task 2:Create a digital clock that updates every second using setInterval(). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+    <style>
+        #watch {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        body {
+            transition: background-color 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- An element to display the time -->
+    <div id="watch">00:00:00</div>
+
+    <script>
+        function updateClock() {
+            var now = new Date(); // Get current date and time
+
+            // hours, minutes, and seconds
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            // Add leading zero if needed (e.g., 09 instead of 9)
+            hours = String(hours).padStart(2, '0');
+            minutes = String(minutes).padStart(2, '0');
+            seconds = String(seconds).padStart(2, '0');
+
+            // Format the time as HH:MM:SS
+            var currentTime = `${hours}:${minutes}:${seconds}`;
+
+            // Display the time in the HTML
+            document.getElementById('watch').innerHTML = currentTime;
+        }
+
+        // Call updateClock every 1000 milliseconds (1 second)
+        setInterval(updateClock, 1000);
+
+        // Call it once immediately so it doesn't wait 1 second to appear
+        updateClock();
+
+
+
+
+
+        
+        // Function to change the background color
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        // Change the background color after 5 seconds
+        setTimeout(changeBackgroundColor, 5000);
+    </script>
+
+</body>
+
+</html>

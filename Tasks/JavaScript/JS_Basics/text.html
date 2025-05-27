@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #dis{
+            opacity: 0;
+        } */
+    </style>
+</head>
+<body>
+    <input type="text" id="dis">
+    <textarea name="dis2" id="dis2"></textarea>
+    <button onclick="insert()">Insert</button>
+
+    <script>
+        let dis = document.getElementById("dis")
+        let dis2 = document.getElementById("dis2")
+        
+        function insert(){
+            document.getElementById("dis2").innerHTML = dis.value;
+        }
+    </script>
+</body>
+</html>

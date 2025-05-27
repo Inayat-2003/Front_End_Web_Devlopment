@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    #cal2 {
+      width: 20%;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #dis {
+      width: 100%;
+      font-size: 24px;
+      text-align: right;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .button {
+      width: 45px;
+      font-size: 18px;
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+    }
+    .button:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div id="cal2">
+    <input type="text" id="dis" disabled>
+    <div>
+      <button class="button" onclick="num('7')">7</button>
+      <button class="button" onclick="num('8')">8</button>
+      <button class="button" onclick="num('9')">9</button>
+      <button class="button" onclick="Operator('/')">/</button>
+    </div>
+    <div>
+      <button class="button" onclick="num('4')">4</button>
+      <button class="button" onclick="num('5')">5</button>
+      <button class="button" onclick="num('6')">6</button>
+      <button class="button" onclick="Operator('*')">*</button>
+    </div>
+    <div>
+      <button class="button" onclick="num('1')">1</button>
+      <button class="button" onclick="num('2')">2</button>
+      <button class="button" onclick="num('3')">3</button>
+      <button class="button" onclick="Operator('-')">-</button>
+    </div>
+    <div>
+      <button class="button" onclick="num('0')">0</button>
+      <button class="button" onclick="Operator('+')">+</button>
+      <button class="button" onclick="calculate()">=</button>
+      <button class="button" onclick="clr()">C</button>
+    </div>
+  </div>
+
+  <script>
+    // Well, this would be default
+    let dis = document.getElementById('dis');
+    let currentNumber = '';
+    let previousNumber = '';
+    let operator = '';
+
+    //  This is for assigning function for number to display the value in the input - upon clicking the button
+    function num(number) {
+      currentNumber = currentNumber + number;
+    //   This will overwrite the previous default
+      dis.value = currentNumber;
+    }
+
+
+    function Operator(op) {
+      // the current num will be assigned as previous num to add another new num, this will overwrite the default of previous being empty
+      previousNumber = currentNumber;
+      currentNumber = '';
+      operator = op;
+    //   To make the button work upon clicking " = ", we have to assign the switch case here
+      dis.value = previousNumber + operator;
+    }
+
+    function calculate() {
+      let result;
+      switch (operator) {
+        case '+':
+          result = parseInt(previousNumber) + parseInt(currentNumber);
+          break;
+        case '-':
+          result = parseInt(previousNumber) - parseInt(currentNumber);
+          break;
+        case '*':
+          result = parseInt(previousNumber) * parseInt(currentNumber);
+          break;
+        case '/':
+          result = parseInt(previousNumber) / parseInt(currentNumber);
+          break;
+        default:
+          result = 0;
+      }
+      dis.value = result;
+      currentNumber = result;
+    //   The below will clear the previous number and operator
+      previousNumber = '';
+      operator = '';
+    }
+
+    // The clr button
+    function clr() {
+      dis.value = '';
+      currentNumber = '';
+      previousNumber = '';
+      operator = '';
+    }
+  </script>
+</body>
+</html>

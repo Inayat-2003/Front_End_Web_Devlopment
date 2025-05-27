@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- In JavaScript, an object is a collection of key-value pairs, 
+where each key is a string (or symbol) and the value can be any data type, 
+including numbers, strings, booleans, arrays, functions, or even other objects. -->
+
+
+
+<!-- Diffrence:
+Objects are used to store key-value pairs with meaningful keys, 
+allowing data access using keys for structured data with unique identifiers.
+
+Arrays, on the other hand, store ordered collections of similar data, 
+where elements are accessed using numeric indices, 
+making them ideal for lists or collections of data. -->
+
+
+
+<!-- syntax:-  -->
+ <!-- let object = {
+    key : "value"}
+    index : value
+
+Curly brackets {}: Used to define the object.
+Key-value pairs: Each key is followed by a colon : and a value.
+Keys: Typically strings, but can also be symbols.
+Values: Can be any data type, including strings, numbers, booleans, arrays, or other objects.
+Comma separation: Key-value pairs are separated by commas.-->
+
+
+
+    <script>
+        // Creating an object
+        let car = {
+            brand: "Mercedes",
+            model: "S-560",
+            year: 2020
+        };
+        // document.write(car)
+
+        // Access and print the car's brand and model
+        //console.log("Brand:", car.brand);
+        //console.log("Model:", car.model);
+        // document.write(car.model)
+
+
+        // to update any property
+        //car.year = 2022;
+        //console.log("Updated Year:", car.year);
+        // document.write(car.year)
+
+        // Add a new property color to the car object
+        // car.color = "Blue";
+        // console.log("Car Object:", car);
+        // document.write(car.color)
+
+
+
+
+
+        //     A traditional for loop won't work directly with objects because:
+    // Objects are not indexed: Unlike arrays, objects don't have numeric indices, 
+    // making it difficult to use a traditional for loop.
+
+    // No length property: Objects don't have a built-in length property, 
+    // which is typically used to determine the number of iterations in a for loop.
+
+        for(let index in car){
+            console.log(index)
+            console.log(car[index])
+            //document.writeln(index," => value => ",car[index],"<br>")
+        }
+
+
+    
+    // Characteristics
+    // Key-value pairs: Objects consist of key-value pairs, where each key is unique.
+    // Unordered: The order of key-value pairs is not guaranteed.
+    // Mutable: Objects can be modified after creation.
+
+
+    </script>
+
+</body>
+
+</html>

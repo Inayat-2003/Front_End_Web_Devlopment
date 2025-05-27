@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<!-- Complex data types: -->
+<!-- Store multiple values: Complex data types can store multiple values or properties, 
+unlike primitive types which store a single value.
+
+-> Have structure: Complex data types have a structure or organization, 
+such as key-value pairs in objects or indexed elements in arrays.
+
+-> Can be manipulated: Complex data types can be manipulated and modified,
+    such as adding or removing properties from an object or elements from an array. -->
+
+
+<!-- 1. Array -->
+<!-- An array is a special variable, which can hold more than one value at a time. -->
+<!-- In JavaScript, an array is a data structure that stores a collection of elements, 
+such as numbers, strings, or objects, in a single variable. 
+
+-> Arrays are zero-indexed, 
+meaning the first element at index is 0, and you can access elements using their index. -->
+
+
+    <!-- syntax  -->
+    <!-- let array = [primitive data]
+
+    Square brackets []: Used to define the array.
+    Elements: Separated by commas.
+    Array name: Assign the array to a variable. -->
+
+
+
+
+    <script>
+        // 1.
+        const array = ["Pietro", "Orange", "Aristotle", "Word", true, 32, 38439849384, 7.5,]
+        console.log(array)
+        // console.log(array.length)
+
+        // value[index]
+        // document.writeln(array [4])
+
+
+
+
+        // 2. simple for loop 
+        // This loop is useful when you need to access both 
+        // the index and the value of each element in the array.)
+        for (let i = 0; i < array.length; i++) {
+            // console.log(array[i]) 
+
+            // document.write(i,"value => ",array[i],"<br>")  
+        }
+
+
+
+
+        // 3. For...of Loop
+        // This loop is useful when you need to access the values of an array, 
+        // without worrying about the index.
+
+
+        for (let data of array) {
+            // console.log(data)
+            // document.write(data, "<br>")
+        }
+
+        //         When to use it:
+        // When you need to perform an action on each element of an array or string.
+        // When you don't need the index: When you only need to access the value of each element, not its index.
+
+
+
+
+
+        // 4. for in index, values
+        for (let index in array) {
+            // console.log(index)
+            // console.log(array[index])
+            // document.write(index,"values =>",array[index],"<br>")
+        }
+
+        //     The reasons to avoid for...in with arrays are:
+        // Index is a string in this: The index is returned as a string, not a number.
+
+        // Iterates over all properties: for...in will iterate over all properties, 
+        // including non-numeric ones, which can lead to unexpected behavior.
+
+        // Order is not guaranteed: The order of iteration is not guaranteed to be the same 
+        // as the order of the elements in the array.
+
+    </script>
+
+</body>
+
+</html>

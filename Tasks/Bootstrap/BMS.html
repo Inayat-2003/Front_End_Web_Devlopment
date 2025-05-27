@@ -1,0 +1,1731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmyshow</title>
+    <link rel="icon" type="image/x-icon" href="/images/bkms1.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS.css">
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand">
+                <svg width="115" height="33.9" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_6398_17562)">
+                        <path
+                            d="M72.4622 9.6674L70.5729 6.44009L67.1867 8.05374L65.2974 4.82643L61.9112 6.44009L60.0219 3.21278L56.6357 4.82643L54.7464 1.59912L51.3602 3.21278L49.4709 0L46.0847 1.61366L38.9199 24.9317L47.6252 27.5921C48.2065 25.7167 49.965 24.3357 52.0287 24.3357C54.572 24.3357 56.6357 26.4 56.6357 28.9441C56.6357 28.9731 56.6357 29.0022 56.6357 29.0313C56.6502 29.4529 56.6066 29.8744 56.4758 30.2815L65.3265 32.9855L72.4622 9.6674Z"
+                            fill="#D71920"></path>
+                        <path
+                            d="M46.3747 22.9982C45.9242 22.9109 45.6045 22.533 45.6045 22.0678V10.6559C45.6045 10.118 46.026 9.71094 46.5491 9.71094H54.7894C55.0074 9.71094 55.2254 9.72547 55.4288 9.76909C57.2019 10.0889 58.4953 11.6153 58.4953 13.418V22.0823C58.4953 22.344 58.3936 22.5766 58.2047 22.7656C58.0303 22.94 57.7832 23.0418 57.5361 23.0418C57.478 23.0418 57.4199 23.0418 57.3617 23.0272C56.9112 22.94 56.5915 22.562 56.5915 22.0968V13.4034C56.5915 12.5312 55.9666 11.7898 55.0946 11.6299C54.9928 11.6153 54.8911 11.6008 54.7894 11.6008H52.9873V22.0678C52.9873 22.3294 52.8856 22.562 52.6966 22.751C52.5222 22.9255 52.2752 23.0272 52.0281 23.0272C51.97 23.0272 51.9118 23.0272 51.8537 23.0127C51.4032 22.9255 51.0835 22.5475 51.0835 22.0823V11.6153H47.4793V22.0823C47.4793 22.344 47.3775 22.5766 47.1886 22.7656C47.0142 22.94 46.7671 23.0418 46.5201 23.0418C46.491 23.0127 46.4329 23.0127 46.3747 22.9982Z"
+                            fill="white"></path>
+                        <path
+                            d="M60.0945 27.9846C59.6439 27.912 59.3242 27.5194 59.3242 27.0542C59.3242 26.7926 59.4259 26.56 59.6003 26.3855C59.7747 26.2111 60.0218 26.1093 60.2834 26.1093C61.0827 26.1093 61.7803 25.586 62.0128 24.83L62.9865 21.5591L59.7747 10.845C59.6149 10.3362 59.9055 9.7983 60.4142 9.65292C60.5595 9.60931 60.6903 9.60931 60.8357 9.63839C61.1844 9.69654 61.4751 9.94367 61.5914 10.278L63.9748 18.2736L66.3873 10.278C66.5035 9.82737 66.9831 9.53662 67.4918 9.62385L67.5645 9.63839C68.0731 9.7983 68.3638 10.3362 68.2039 10.845L64.9049 21.8498L63.8585 25.3679C63.5969 26.182 63.1319 26.8362 62.5215 27.2723C61.8675 27.752 61.0972 28.0137 60.2979 28.0137C60.2107 27.9992 60.1526 27.9846 60.0945 27.9846Z"
+                            fill="white"></path>
+                        <path
+                            d="M0.799318 22.882C0.319727 22.7948 0 22.4023 0 21.908V4.87014C0 4.59393 0.101731 4.34679 0.290661 4.17234C0.479591 3.98335 0.726652 3.88159 0.988247 3.88159C1.04638 3.88159 1.10451 3.88159 1.16264 3.89613C1.64223 3.98335 1.97649 4.3904 1.97649 4.87014V9.7111H3.85126C4.06925 9.7111 4.30178 9.72564 4.51978 9.76925C6.36547 10.0891 7.70251 11.6882 7.70251 13.5635V19.0587C7.70251 21.1811 5.97308 22.9111 3.85126 22.9111H0.988247C0.930115 22.8966 0.85745 22.8966 0.799318 22.882ZM1.97649 20.9195H3.85126C4.8831 20.9195 5.72602 20.0763 5.72602 19.0441V13.5635C5.72602 12.6477 5.07203 11.8772 4.17098 11.7173C4.06925 11.7027 3.95299 11.6882 3.85126 11.6882H1.97649V20.9195Z"
+                            fill="#333333"></path>
+                        <path
+                            d="M13.3996 22.9545C11.5685 22.6347 10.2314 21.0356 10.2314 19.1602V13.447C10.2314 12.4149 10.6238 11.4554 11.3505 10.7285C12.0771 10.0016 13.0363 9.60913 14.0682 9.60913C14.2862 9.60913 14.5187 9.62367 14.7367 9.66728C16.5824 9.9871 17.9194 11.5862 17.9194 13.4616V19.1748C17.9194 20.2069 17.5125 21.1664 16.7858 21.8933C16.0592 22.6201 15.1 23.0127 14.0682 23.0127C13.8502 23.0127 13.6176 22.9981 13.3996 22.9545ZM14.3879 11.6008C14.2862 11.5862 14.1699 11.5717 14.0682 11.5717C13.0218 11.5717 12.1934 12.4003 12.1934 13.447V19.1602C12.1934 20.0761 12.8329 20.8466 13.7339 21.0065C13.8356 21.021 13.9519 21.0356 14.0682 21.0356C15.1 21.0356 15.9429 20.1924 15.9429 19.1602V13.447C15.9429 12.5312 15.2889 11.7607 14.3879 11.6008Z"
+                            fill="#333333"></path>
+                        <path
+                            d="M23.6164 22.9546C21.7853 22.6348 20.4482 21.0357 20.4482 19.1604V13.4472C20.4482 11.3247 22.1777 9.59473 24.2995 9.59473C24.5175 9.59473 24.75 9.60926 24.968 9.65288C26.8137 9.9727 28.1508 11.5718 28.1508 13.4472V19.1604C28.1508 20.1925 27.7438 21.152 27.0172 21.8789C26.2905 22.6057 25.3313 22.9983 24.2995 22.9983C24.067 23.0128 23.8344 22.9983 23.6164 22.9546ZM24.6192 11.6009C24.5175 11.5864 24.4012 11.5718 24.2995 11.5718C23.2531 11.5718 22.4247 12.4005 22.4247 13.4472V19.1604C22.4247 20.0762 23.0642 20.8467 23.9652 21.0066C24.067 21.0212 24.1832 21.0357 24.2995 21.0357C24.7936 21.0357 25.2587 20.8467 25.622 20.4978C25.9853 20.1489 26.1743 19.6692 26.1743 19.1749V13.4472C26.1743 12.5313 25.5203 11.7608 24.6192 11.6009Z"
+                            fill="#333333"></path>
+                        <path
+                            d="M31.479 22.9983C30.9994 22.9111 30.6797 22.5186 30.6797 22.0243V4.87014C30.6797 4.59393 30.7814 4.34679 30.9703 4.17234C31.1593 3.98335 31.4063 3.88159 31.6679 3.88159C31.7261 3.88159 31.7842 3.88159 31.8423 3.89613C32.3219 3.98335 32.6562 4.3904 32.6562 4.87014V15.0318L37.205 9.94371C37.4376 9.69657 37.7718 9.58027 38.1206 9.63842C38.3095 9.6675 38.4694 9.75472 38.6147 9.87102C39.0217 10.249 39.0507 10.8596 38.6874 11.2666L35.2576 15.09L38.8182 21.5882C38.949 21.8063 38.9781 22.0679 38.9054 22.3151C38.8327 22.5622 38.6583 22.7803 38.4258 22.8966C38.2369 23.0129 38.0043 23.042 37.7718 23.0129C37.4812 22.9547 37.2196 22.7948 37.0888 22.5477L33.8915 16.6746L32.6707 18.012V22.0534C32.6707 22.3151 32.569 22.5768 32.3801 22.7657C32.1911 22.9547 31.9441 23.042 31.6825 23.042C31.5953 23.0129 31.5371 23.0129 31.479 22.9983Z"
+                            fill="#333333"></path>
+                        <path
+                            d="M75.0491 22.9836C73.9446 22.7946 73.0435 22.155 72.4767 21.1809C72.3459 20.9629 72.3168 20.6867 72.3895 20.425C72.4622 20.1633 72.622 19.9598 72.84 19.829C73.029 19.7127 73.276 19.6836 73.5086 19.7127C73.7992 19.7708 74.0608 19.9307 74.1916 20.1924C74.4532 20.6285 74.8601 20.9193 75.3688 21.0065C75.921 21.0937 76.4152 20.9483 76.8366 20.5849C77.2145 20.236 77.4179 19.7272 77.3598 19.2329C77.3307 18.7096 77.0837 18.2589 76.6477 17.9536L73.9881 16.0638C73.1162 15.4532 72.5639 14.4792 72.4767 13.3889C72.4186 12.284 72.84 11.2373 73.6394 10.5395C74.4241 9.81267 75.4996 9.47831 76.575 9.62368C77.6941 9.82721 78.6097 10.4523 79.1328 11.3827C79.2636 11.6008 79.2927 11.877 79.22 12.1241C79.1474 12.3858 78.9875 12.6039 78.7695 12.7202C78.5806 12.8365 78.3335 12.8655 78.1155 12.8365C77.8249 12.7783 77.5633 12.6184 77.4325 12.3567C77.2145 11.9642 76.793 11.688 76.3134 11.6008C75.8048 11.5135 75.3397 11.6589 74.9764 11.9933C74.6421 12.3131 74.4532 12.7783 74.4823 13.258C74.5113 13.7232 74.7729 14.1739 75.1653 14.4501L77.8249 16.3109C78.7405 16.9651 79.3072 17.9827 79.3654 19.1021C79.4526 20.2215 79.0166 21.2827 78.1737 22.0387C77.3744 22.7946 76.2698 23.129 75.1508 22.9836H75.0491Z"
+                            fill="#333333"></path>
+                        <path
+                            d="M82.6928 23.0127C82.2132 22.9255 81.8789 22.5185 81.8789 22.0387V4.88454C81.8789 4.62287 81.9806 4.36119 82.1696 4.17221C82.3585 3.99776 82.6056 3.896 82.8672 3.896C82.9253 3.896 82.9979 3.896 83.0561 3.91053C83.5357 3.99776 83.8554 4.39027 83.8554 4.88454V9.72551H85.7302C85.9627 9.72551 86.1807 9.74005 86.4132 9.78366C88.2444 10.1035 89.5814 11.7026 89.5814 13.5779V22.0387C89.5814 22.5912 89.1454 23.0273 88.5932 23.0273C88.535 23.0273 88.4769 23.0273 88.4188 23.0127C87.9392 22.9255 87.6049 22.5185 87.6049 22.0387V13.5779C87.6049 12.6621 86.9655 11.8916 86.0644 11.7317C85.9627 11.7171 85.8464 11.7026 85.7302 11.7026H83.8554V22.0387C83.8554 22.5912 83.4194 23.0273 82.8672 23.0273C82.809 23.0273 82.7509 23.0273 82.6928 23.0127Z"
+                            fill="#333333"></path>
+                        <path
+                            d="M95.2639 22.969C93.4327 22.6492 92.0957 21.0501 92.0957 19.1748V13.4616C92.0957 11.3391 93.8251 9.60913 95.9469 9.60913C96.1649 9.60913 96.3975 9.62367 96.6155 9.66728C98.4612 9.9871 99.7982 11.5862 99.7982 13.4616V19.1893C99.7982 20.2215 99.3913 21.1809 98.6646 21.9078C97.938 22.6347 96.9788 23.0272 95.9469 23.0272C95.7144 23.0272 95.4819 23.0127 95.2639 22.969ZM96.2667 11.6153C96.1649 11.6008 96.0487 11.5862 95.9469 11.5862C95.4383 11.5862 94.9732 11.7752 94.6244 12.1386C94.2756 12.4875 94.0722 12.9673 94.0722 13.4616V19.1893C94.0722 20.1052 94.7116 20.8757 95.6127 21.0356C95.729 21.0501 95.8307 21.0646 95.9469 21.0646C96.4411 21.0646 96.9061 20.8757 97.2694 20.5268C97.6328 20.1779 97.8217 19.6981 97.8217 19.2038V13.4616C97.8072 12.5457 97.1532 11.7752 96.2667 11.6153Z"
+                            fill="#333333"></path>
+                        <path
+                            d="M114.971 10.8303C115.029 10.5832 115 10.3215 114.869 10.1035C114.738 9.88541 114.506 9.7255 114.229 9.65281C114.171 9.63827 114.113 9.63827 114.055 9.63827C113.604 9.63827 113.212 9.94356 113.096 10.3797C113.081 10.4233 112.02 14.7118 111.192 17.9682L111.177 18.0409L111.163 17.9682C110.349 14.7118 109.274 10.4233 109.259 10.3797C109.172 10.0017 108.881 9.71096 108.503 9.65281C108.445 9.63827 108.387 9.63827 108.329 9.63827C107.893 9.63827 107.515 9.94356 107.384 10.3797C107.37 10.4233 106.309 14.7118 105.48 17.9682L105.466 18.0409L105.451 17.9682C104.638 14.7118 103.562 10.4233 103.548 10.3797C103.46 10.0017 103.155 9.7255 102.777 9.65281C102.647 9.62374 102.516 9.63827 102.385 9.66735C101.862 9.79819 101.542 10.3215 101.673 10.8303L104.536 22.2713C104.638 22.6493 104.943 22.9255 105.306 22.9982C105.35 23.0127 105.408 23.0127 105.466 23.0127C105.931 23.0127 106.309 22.722 106.396 22.2713C106.411 22.2277 107.486 17.9392 108.3 14.6682L108.314 14.5955L108.329 14.6682C109.172 17.9537 110.233 22.2713 110.233 22.2713C110.349 22.6493 110.64 22.9255 111.003 22.9982C111.061 23.0127 111.105 23.0127 111.163 23.0127C111.628 23.0127 112.006 22.7074 112.093 22.2713L114.971 10.8303Z"
+                            fill="#333333"></path>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_6398_17562">
+                            <rect width="115" height="33" fill="white"></rect>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <!-- <form class="d-flex col-7 me-auto">
+                
+            </form> -->
+            <!-- Button trigger modal -->
+            <form type="button" class="btn d-flex col-7 me-auto" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </button>
+            </form>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                <nav class="navbar navbar-light">
+                                    <div class="container p-2">
+                                        <form class="d-flex">
+                                            <input class="form-control" type="search" placeholder="Search"
+                                                aria-label="Search" style="width: 500px; margin-left: 330px;">
+                                        </form>
+                                    </div>
+                                </nav>
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  bg-outline-dark" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">Movies</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link bg-danger" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                                        aria-selected="false">Cinema</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="row d-flex container">
+                                        <div class="col-3 mt-3 text-danger p-3">HINDI <br>
+                                            <span class="text-dark fw-lighter fs-6">Badass Ravi Kumar</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Bareli Ki Barfi</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Captaine america </span><br>
+                                            <span class="text-dark fw-lighter fs-6">Chhavaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Devaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Emergency</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Jab tak hai jaan</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Lets meet</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Loveyeppa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Mufasha</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Pushpa 2 : the rule</span><br>
+                                        </div>
+                                        <div class="col-3 mt-3 text-danger p-3">ENGLISH <br>
+                                            <span class="text-dark fw-lighter fs-6">Badass Ravi Kumar</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Bareli Ki Barfi</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Captaine america </span><br>
+                                            <span class="text-dark fw-lighter fs-6">Chhavaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Devaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Emergency</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Jab tak hai jaan</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Lets meet</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Loveyeppa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Mufasha</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Pushpa 2 : the rule</span><br>
+                                        </div>
+                                        <div class="col-3 mt-3 text-danger p-3">GUJARATI <br>
+                                            <span class="text-dark fw-lighter fs-6">Badass Ravi Kumar</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Bareli Ki Barfi</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Captaine america </span><br>
+                                            <span class="text-dark fw-lighter fs-6">Chhavaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Devaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Emergency</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Jab tak hai jaan</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Lets meet</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Loveyeppa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Mufasha</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Pushpa 2 : the rule</span><br>
+                                        </div>
+                                        <div class="col-3 mt-3 text-danger p-3">TAMIL <br>
+                                            <span class="text-dark fw-lighter fs-6">Badass Ravi Kumar</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Bareli Ki Barfi</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Captaine america </span><br>
+                                            <span class="text-dark fw-lighter fs-6">Chhavaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Devaaa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Emergency</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Jab tak hai jaan</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Lets meet</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Loveyeppa</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Mufasha</span><br>
+                                            <span class="text-dark fw-lighter fs-6">Pushpa 2 : the rule</span><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row5 d-flex">
+                                        <div class="col-3 mt-5">
+                                            <ul>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Palladium Mall,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Acropolis,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Cinepolis: Nexus
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Arved Transcube,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">City Gold: Ashram
+                                                        Road</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Rajhans Cinemas:
+                                                        Vastral</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">INOX: Himalaya Mall,
+                                                        Drive In Road, Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Mango Plus Cinemas:
+                                                        Nikol</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">AB Miniplex:
+                                                        Shivranjini Cross Road, Satellite</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">NY Cinemas:
+                                                        Chandkheda</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3 mt-5">
+                                            <ul>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Palladium Mall,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Acropolis,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Cinepolis: Nexus
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Arved Transcube,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">City Gold: Ashram
+                                                        Road</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Rajhans Cinemas:
+                                                        Vastral</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">INOX: Himalaya Mall,
+                                                        Drive In Road, Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Mango Plus Cinemas:
+                                                        Nikol</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">AB Miniplex:
+                                                        Shivranjini Cross Road, Satellite</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">NY Cinemas:
+                                                        Chandkheda</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3 mt-5">
+                                            <ul>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Palladium Mall,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Acropolis,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Cinepolis: Nexus
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Arved Transcube,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">City Gold: Ashram
+                                                        Road</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Rajhans Cinemas:
+                                                        Vastral</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">INOX: Himalaya Mall,
+                                                        Drive In Road, Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Mango Plus Cinemas:
+                                                        Nikol</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">AB Miniplex:
+                                                        Shivranjini Cross Road, Satellite</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">NY Cinemas:
+                                                        Chandkheda</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3 mt-5">
+                                            <ul>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Palladium Mall,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Acropolis,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Cinepolis: Nexus
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">PVR: Arved Transcube,
+                                                        Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">City Gold: Ashram
+                                                        Road</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Rajhans Cinemas:
+                                                        Vastral</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">INOX: Himalaya Mall,
+                                                        Drive In Road, Ahmedabad</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">Mango Plus Cinemas:
+                                                        Nikol</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">AB Miniplex:
+                                                        Shivranjini Cross Road, Satellite</a></li>
+                                                <li><a href="" class="text-dark fw-lighter fs-6">NY Cinemas:
+                                                        Chandkheda</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Ahmedabad...
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-center modal-xl ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                            <form class="d-flex col-12 me-auto">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-center fw-light">Popular Cities</p>
+
+                            <div class="d-flex justify-content-around">
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/mumbai.png" alt="MUMBAI"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Mumbai</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/ncr.png" alt="NCR"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Delhi</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/bang.png" alt="BANG"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Benglore</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/hyd.png" alt="HYD"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Hydrabad</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/chd.png" alt="CHD"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Chandigarh</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/ahd-selected.png"
+                                        alt="AHD" class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Ahmedabad</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/chen.png" alt="CHEN"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Chennai</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/pune.png" alt="PUNE"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Pune</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/kolk.png" alt="KOLK"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Kolkata</p>
+                                </div>
+                                <div class="col-1">
+                                    <img src="//in.bmscdn.com/m6/images/common-modules/regions/koch.png" alt="KOCH"
+                                        class="bwc__sc-ttnkwg-26 izPSOY">
+                                    <p class="mx-2">Kochi</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button> -->
+                            <p class="text-danger m-auto">View All Cities</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sign in Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModals">
+                sign in
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <p class="modal-title m-auto" id="exampleModalLabel">Get Started</p>
+                        </div>
+                        <!-- <div class="modal-body">
+          ...
+        </div> -->
+                        <button class="col-10 rounded m-auto mb-2 mt-4 p-2"><img class="me-5" alt="google logo"
+                                src="//in.bmscdn.com/webin/common/icons/googlelogo.svg">Connect with Google</button>
+                        <button class="col-10 rounded m-auto mb-2 mt-4 p-2"><img class="me-5" alt="email logo"
+                                src="//in.bmscdn.com/webin/common/icons/email.svg">Connect with Email</button>
+                        <button class="col-10 rounded m-auto mb-2 mt-4 p-2"><svg class="me-5" width="19"
+                                xmlns="http://www.w3.org/2000/svg" height="19" viewBox="0 0 170 170"
+                                aria-labelledby="apple-label" role="img">
+                                <path
+                                    d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.501 3.24-12.742 3.35-4.929.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.032-7.08-9.169-15.29-12.41-24.65-3.471-10.11-5.211-19.9-5.211-29.378 0-10.857 2.346-20.221 7.045-28.068 3.693-6.303 8.606-11.275 14.755-14.925s12.793-5.51 19.948-5.629c3.915 0 9.049 1.211 15.429 3.591 6.362 2.388 10.447 3.599 12.238 3.599 1.339 0 5.877-1.416 13.57-4.239 7.275-2.618 13.415-3.702 18.445-3.275 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.386-18.22 17.731-18.1 31.002.11 10.337 3.86 18.939 11.23 25.769 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.669-7.12 8.324-15.732 13.134-25.071 12.375a25.222 25.222 0 0 1-.188-3.07c0-7.778 3.386-16.102 9.399-22.908 3.002-3.446 6.82-6.311 11.45-8.597 4.62-2.252 8.99-3.497 13.1-3.71.12 1.083.17 2.166.17 3.24z">
+                                </path>
+                            </svg>Connect with Apple</button>
+                        <p class="m-auto mt-3 mb-3">OR</p>
+                        <div>
+                            <img class="ms-5" alt="indian flag"
+                                src="//in.bmscdn.com/webin/common/icons/indianflag.svg">+91
+                            <input style="border: none; text-align: center;" class="col-8 mb-5 mt-2" type="text"
+                                placeholder="continue with phone number">
+                        </div>
+                        <p class="m-auto mb-2">I agree to the <a href="">Term & Condition</a> & <a href="">Privacy
+                                Policy</a></p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- off canvas  -->
+            <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <svg width="22px" height="14px" xmlns="http://www.w3.org/2000/svg">
+                    <title>Hamburger Menu</title>
+                    <g fill-rule="nonzero" stroke="#3B4261" stroke-width="1.5" fill="none" stroke-linecap="round">
+                        <path d="M1.611 1h20.614M1.611 7h20.614M1.611 13h20.614"></path>
+                    </g>
+                </svg>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Hey!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="list-group list-group-horizontal list-group-flush">
+                        <li class="list-group-item"><img
+                                src="https://in.bmscdn.com/webin/movies/superstar/rewards_login.png" alt="" width="60"
+                                height="60"></li>
+                        <li class="list-group-item mx-0 px-0">
+                            <h6 class="h6">Unlock special offers & great benefits</h6>
+                        </li>
+                        <li class="list-group-item mx-0 px-0"><button type="button"
+                                class="btn btn-outline-danger btn-sm">Login/Register</button></li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="notification">
+                                <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="20" height="20" viewBox="1 0 22 22">
+                                        <path fill="#666" fill-rule="evenodd"
+                                            d="M13.977 5.094l.002.002-.005-.002v.001l-.021-.005.206.045A5.002 5.002 0 0 1 18 10v6.974L20 19h-2l-3.55-.001a2.5 2.5 0 1 1-4.9 0L7.027 19v.004h-3L6 17.003V10a5.002 5.002 0 0 1 4.048-4.91l-.049.01L10 4a2 2 0 1 1 4 0l.001 1.1-.008-.002-.035-.008.018.004zm-.563 13.905h-2.829a1.5 1.5 0 1 0 2.83 0zM13 6h-2a4 4 0 0 0-4 4v6.978L7.014 18H17v-8a4 4 0 0 0-4-4zm.983-.904l.003.001.007.001-.008-.001-.002-.001zm-.002 0h.002l-.005-.002.003.002zm-.28-.047l.112.017.018.002-.13-.019zm-3.388-.003l-.057.009.036-.005.02-.004zm.267-.029l-.172.018.148-.016.024-.002zm2.928.008l.082.01a5.014 5.014 0 0 0-.082-.01zm-2.803-.016l-.125.008h.015l.11-.008zm2.538-.003h.013l.05.003-.063-.003zM12 3a1 1 0 0 0-1 1v1h2V4a1 1 0 0 0-1-1z">
+                                        </path>
+                                    </svg></span>
+                                Notifications
+                            </form>
+                        </li>
+
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="purchase">
+                                <span class="input-group-text" id="basic-addon1"><img
+                                        src="https://assets-in.bmscdn.com/members/common/icons/purchasehistory.png"
+                                        alt="" height="18" width="18"></span>
+                                Your Orders
+                                <!-- <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#666" fill-rule="evenodd" d="M12 2a4 4 0 0 1 4 4v2h1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h1V6a4 4 0 0 1 4-4zm5 7H7a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V10a1 1 0 0 0-1-1zm-5 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-11a3 3 0 0 0-3 3v2h6V6a3 3 0 0 0-3-3z"></path></svg></span> -->
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="search">
+                                <span class="input-group-text" id="basic-addon1"><img
+                                        src="https://assets-in.bmscdn.com/members/common/icons/streamlibrary_2.png"
+                                        alt="" height="18" width="18"></span>
+                                Stream Library
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="search">
+                                <span class="input-group-text" id="basic-addon1"><img
+                                        src="https://assets-in.bmscdn.com/members/common/icons/playcreditcard.png"
+                                        alt="" height="18" width="18"></span>
+                                Play credit card
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="search">
+                                <span class="input-group-text" id="basic-addon1"><img
+                                        src="https://assets-in.bmscdn.com/members/common/icons/helpandsupport.png"
+                                        alt="" height="18" width="18"></span>
+                                Help & Support
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="search">
+                                <span class="input-group-text" id="basic-addon1"><img
+                                        src="https://assets-in.bmscdn.com/members/common/icons/accountandsettings.png"
+                                        alt="" height="18" width="18"></span>
+                                Accounts & Settings
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="search">
+                                <span class="input-group-text" id="basic-addon1"><img
+                                        src="https://assets-in.bmscdn.com/members/common/icons/rewards_1.png" alt=""
+                                        height="18" width="18"></span>
+                                Rewards
+                            </form>
+                        </li>
+                        <li class="list-group-item">
+                            <form class="d-flex flex-grow-1" role="search">
+                                <span class="input-group-text" id="basic-addon1"><img
+                                        src="https://assets-in.bmscdn.com/members/common/icons/bookachange.png" alt=""
+                                        height="18" width="18"></span>
+                                BookAChange
+                            </form>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- navs-tabs -->
+    <div class="nav1 row d-flex">
+        <div class="div col-5">
+            <ul>
+                <li>Movies</li>
+                <li>Stream</li>
+                <li>Plays</li>
+                <li>Events</li>
+                <li>Sports</li>
+            </ul>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-4">
+            <ul>
+                <li>Listyourshow</li>
+                <li>Corporates</li>
+                <li>Gift Cards</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- slider1 start -->
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744877554805_revplaycard1240x300.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1744711965439_gnr1240x300.jpeg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1745579198622_29aprvenompreviewweb.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Rec. Movies start -->
+    <h5 class="container mt-5">Recomended Movies</h5>
+    <div id="carouselExampleControls2" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MjEzLjhLIExpa2Vz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00382745-kukdfygpww-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Raid 2</h5>
+                                <p class="card-text">Drama/Thriller</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4zLzEwICAzOC43SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439158-flhksfkatd-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kesari Chapter 2</h5>
+                                <p class="card-text">Drama/Historical</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICAySyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439759-vzqdhuaggz-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Ground Zero</h5>
+                                <p class="card-text">Action/Historical/Thriller</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICAzOS44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00416952-ldjrtgmkrz-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Jaat</h5>
+                                <p class="card-text">Action/Drama</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA3MiBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00439413-rcdzzmcene-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Auntypreneur</h5>
+                                <p class="card-text">Comedy/Drama</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni43LzEwICAxLjFLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00438460-dfckrkjwlj-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mithada Maheman</h5>
+                                <p class="card-text">Comedy/Drama</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-NjguMksgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00413426-wffcddhpck-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Thunderbolts*</h5>
+                                <p class="card-text">Action/Adventure</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC8xMCAgMi4ySyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00429656-kuwbaufppl-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Until Dawn</h5>
+                                <p class="card-text">Horro/Thriller</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MzYuOEsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00435722-zjxhjtytjh-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Bhootni</h5>
+                                <p class="card-text">Comedy/Horror</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS40LzEwICAxSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00326530-shqmvlultk-portrait.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Phule</h5>
+                                <p class="card-text">Biography/Drama</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- entertainment img -->
+    <div class="container mb-5">
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png"
+            height="100%" width="98%" alt="">
+    </div>
+
+
+    <!-- Best of live start -->
+    <h5 class="container mt-5">The Best Of Live Events</h5>
+    <div id="carouselExampleControls3" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/amusement-parks-banner-desktop-collection-202503251132.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NiBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/theatre-shows-collection-202211140440.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/kids-banner-desktop-collection-202503251132.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NDArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MyBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/interactive-games-collection-202211140440.png"
+                                class="card-img-top" style="border-radius: 10px;" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+    <!-- slider 2 start -->
+    <div class="slider4" style="background: #2b3149; height: 700px;">
+        <div class="container">
+            <img alt="Tvod Offer" width="100%" height="100%" class="container mt-3"
+                style="border-radius: 0px; opacity: 1; transition: 0.5s; width: 100%; min-height: inherit; max-height: inherit; "
+                src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-banner-web-collection-202208191200.png">
+            <h5 class="container mt-5" style="color: white;">Premieres</h5>
+            <h6 class="container mt-6" style="color: white;">Brand new releases every Friday</h6>
+            <div id="carouselExampleControls4" class="carousel slide  mt-5 " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-5 g-4">
+                            <div class="col">
+                                <div class="card border-0" style="width: 200px;">
+                                  
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0" style="width:  200px">
+                                   
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0" style="width:  200px">
+                                    
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0" style="width:  200px">
+                                    
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0" style="width:  200px">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-5 g-4">
+                            <div class="col">
+                                <div class="card border-0" style="width:200px">
+                                  
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card border-0" style="width:200px">
+                                   
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0" style="width:200px">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card border-0" style="width:200px">
+                                   
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card border-0" style="width:200px">
+                                  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Your Music starts -->
+    <h5 class="container mt-5">Your Music Studio</h5>
+    <div id="music" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437140-humshtekhq-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Guns N' Roses:India 2025</h5>
+                                <p class="card-text">Mahalaxmi Race Course: Mumbai</p>
+                                <p class="card-text">Concerts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMiBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439804-mgvdadgvgh-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">KUMAR SANU LIVE IN CONCERT - AHMEDABAD</h5>
+                                <p class="card-text">The Forum - Celebration and Convention: Ahmedabad</p>
+                                <p class="card-text">Concerts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyOSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443215-xpnejksrwy-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Sachet Parampara - Raanjhan India Tour</h5>
+                                <p class="card-text">Venue To Be Announced: Ahmedabad</p>
+                                <p class="card-text">Concerts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440554-etfaejnrmk-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Kirtidan Gadhvi & Sairam Dave LIVE</h5>
+                                <p class="card-text">Sabarmati Riverfront Event Centre: Ahmedabad</p>
+                                <p class="card-text">Concerts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCA3IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442627-plrxcexxuf-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Taylor Swift: Cruel Summer Party Edition</h5>
+                                <p class="card-text">Venue To Be Announced: Ahmedabad</p>
+                                <p class="card-text">Club Gigs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-VHVlLCA2IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442980-xzftgyhgtw-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Main to EK Khwab Hu</h5>
+                                <p class="card-text">Tagore MEmory Hall: Ahmedabad</p>
+                                <p class="card-text">Club Gigs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNCBTZXA%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442046-pykuxapsrh-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Afterverse - A The Weekend Themed Fan...</h5>
+                                <p class="card-text">Venue To Be Announced: Ahmedabad</p>
+                                <p class="card-text">Concerts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00352052-fjcjjplhzk-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Rahgir: Kya Jaipur Kya Dilli Tour</h5>
+                                <p class="card-text">Mahendi Nawaz Jung Hall: Ahmedabad</p>
+                                <p class="card-text">Club Gigs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441367-yxgfgpxang-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">pool party - Aqva</h5>
+                                <p class="card-text">Pleasure Club: Ahmedabad</p>
+                                <p class="card-text">Concerts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAyNCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442067-tumumtmmuq-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">TECHNO TATVA LAB with - ASHMIT PATEL</h5>
+                                <p class="card-text">Vince Cafe: Ahmedabad</p>
+                                <p class="card-text">Club Gigs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#music" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#music" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- outdoor start -->
+    <h5 class="container mt-5">Outdoor Events</h5>
+    <div id="carouselExampleControls5" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442326-fprsmcyngk-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">The Amit Khuva Show: Gujarati Standup Comedy</h5>
+                                <p class="card-text">Mahendi Nawaz Jung Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441194-cuuusxfqqa-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Tum, Main aur Ishq - Ashish Bagrecha</h5>
+                                <p class="card-text">Dinesh Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMiBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00355125-zljecjjnjf-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Kisi Ko Batana Mat Ft. Anubhav Singh Bassi</h5>
+                                <p class="card-text">HK Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMiBKdW4gb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00376688-mkejbrwbgr-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">HUMARE RAM Ft Ashutosh Rana and...</h5>
+                                <p class="card-text">Auda Auditorium: Shela Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA1IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00308166-dwdwmxezgm-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Shankus Waterpark & Resort</h5>
+                                <p class="card-text">Shanku's Water Park: Mehsana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMyBKdWw%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00329412-dbdvwxsanp-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Kal ki Chinta Nahi Karta ft. Ravi Gupta</h5>
+                                <p class="card-text">HK Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00145294-kdcjyfmfcq-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Jo Bolta Hai Wohi Hota Hai feat Harsh Gujral</h5>
+                                <p class="card-text">HK Hall, Ellisbridge: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441590-bztpqjdptv-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Paw PetrolFest Comes To India</h5>
+                                <p class="card-text">Palladium Mall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436213-rmpquwxqgm-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Kolkata Knight Riders vs Rajasthan Royals</h5>
+                                <p class="card-text">Eden Gardens: Kolkata</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434753-fueqezyrut-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Lucknow Super Giants v Royal Challengers...</h5>
+                                <p class="card-text">BRSABV EKANA CRICKET STADIUM: LUCKNOW</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- therapy start -->
+    <h5 class="container">Laughter Therapy</h5>
+    <div id="carouselExampleControls6" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442326-fprsmcyngk-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">The Amit Khuva Show: Gujarati Standup Comedy</h5>
+                                <p class="card-text">Mahendi Nawaz Jung Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00391540-wdcsesekft-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Busted: Vansh Mulchandani</h5>
+                                <p class="card-text">Youcomedy Club: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440317-cqgdvwjjcj-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Weak Independent Woman by Sharon Verma</h5>
+                                <p class="card-text">Mishty Studio: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA4IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00440583-dusnfspwen-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Freshers Party Ft. Kullu</h5>
+                                <p class="card-text">Mahendi Nawaz Jung Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyOSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00439060-cwdqasfsqc-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Vipul Goyal Unleashed</h5>
+                                <p class="card-text">HK Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00391908-zhmkqrxewd-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Sensitive Content - Adult Comedy Show</h5>
+                                <p class="card-text">Sip of Hope - The Coffee House: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00411941-uvjqplnljh-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">The Midnight Comedy Show</h5>
+                                <p class="card-text">Youcomedy Club: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00314086-qghhttnare-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Punit Pania Live in Ahmedabad</h5>
+                                <p class="card-text">Youcomedy Club: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxNSBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00408533-rkcwqhsqqm-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">PS I Love You By Pranav Sharma</h5>
+                                <p class="card-text">Mahendi Nawaz Jung Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNCBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442758-mxjjytpkul-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Surendra Sharma Ki Char Line</h5>
+                                <p class="card-text">Thakorbhai Desai Hall: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- latest start -->
+    <h5 class="container">Latest Plays</h5>
+    <div id="carouselExampleControls7" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyNSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00376718-mlvtgttgwt-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Welcome Zindagi - Ahmedabad</h5>
+                                <p class="card-text">Gujarati</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA4IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00097688-sdavlbmvef-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Chanakya - Hindi Play</h5>
+                                <p class="card-text">Hindi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxIEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00387309-tbkfyshqhm-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Chikka on Roll</h5>
+                                <p class="card-text">Hindi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA4IEp1bg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433177-xesganhkwr-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">OH WOMANIYA</h5>
+                                <p class="card-text">Gujarati</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443124-szmtxxcayl-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Jar Tar Chi Goshta</h5>
+                                <p class="card-text">Marathi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443773-dgmtelfrfv-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Ankahee - The Silent Play</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442981-prmuhrapng-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Arush - stories of peace</h5>
+                                <p class="card-text">Gujarati</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAyMiBKdW4gb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00376688-mkejbrwbgr-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">HUMARE RAM Ft Ashutosh Rana and...</h5>
+                                <p class="card-text">Hindi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Game and sport start -->
+    <h5 class="container">Tops Games & Sport Events</h5>
+    <div id="carouselExampleControls8" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00434722-xruapnrqzy-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">RAJASTHAN ROYALS - JAIPUR</h5>
+                                <p class="card-text">Multiple Venues</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCA5IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434753-fueqezyrut-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Lucknow Super Giants v Royal Challengers</h5>
+                                <p class="card-text">BRSABV EKANA CRICKET STADIUM: LUCKNOW</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAxNiBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00437302-cyqaamesuk-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">RAJASTHAN ROYALS VS PUNJAB KINGS</h5>
+                                <p class="card-text">SAWAI MANSINGH STADIUM, JAIPUR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCA3IE1heQ%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00436214-bvtrpwanmu-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Kolkata Knight Riders vs Chennai Super Kings</h5>
+                                <p class="card-text">Eden Gardens: Kolkata</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00434866-mtkkgchjtx-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Fit Bharat Marathon - Get India's Biggest Medal</h5>
+                                <p class="card-text">Your Place and Your Time: India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443966-smqxdtsxgt-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">ACC Online Chess Arena Tournament</h5>
+                                <p class="card-text">Your Place and Your Time: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00400167-hwsahhygka-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Run for the Ocean - Get Medal by Courier</h5>
+                                <p class="card-text">Your Place and Your Time: India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00429006-wcuzatxrrs-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">TRAIL BLAZERS VICTORY TRAIL MARATHON</h5>
+                                <p class="card-text">Your Place and Your Time: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxOCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443597-svmsfkjngx-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Online Chess Tournament - Kids Special</h5>
+                                <p class="card-text">Your Place and Your Time: India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA1IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00444211-spvycwvykv-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">WALKATHON - WALK FOR MOTHER</h5>
+                                <p class="card-text">Your Place and Your Time: India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- fun activity starts -->
+    <h5 class="container">Explore Fun Activities</h5>
+    <div id="carouselExampleControls9" class="carousel slide container mt-5 mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-1 row-cols-md-5 g-4">
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px;">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00367834-rwwdfqmhsm-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">AKSHAR RIVER CRUISE</h5>
+                                <p class="card-text">Sabarmati Riverfront: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXkgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00441784-jtwxgjjgtn-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Shankus Splash N Spin Party</h5>
+                                <p class="card-text">Shanku's Water Park: Mehsana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00442057-pglhcbtfnp-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Escape Zone - Ahmedabad</h5>
+                                <p class="card-text">Escape Zone - Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCAxMSBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00443543-gldbxjghta-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">VibeHub Social Mini Fest - Singles' Edition</h5>
+                                <p class="card-text">Big Scoop Cafe - Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCA1IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00312631-vancsbfzsm-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Mystry Rooms - Ahmedabad</h5>
+                                <p class="card-text">Mystry Rooms - Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-RnJpLCAyMCBKdW4%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00433648-wmvvzjdhnf-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">SPACETECH FESTIVAL 4.0</h5>
+                                <p class="card-text">Palm Bliss Resort & Spa: Kullu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAyMiBTZXAgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00444121-ezcvgkflzt-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">VRINDAVAN NAGARI</h5>
+                                <p class="card-text">Shree Hari Party Plot: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA0IE1heSBvbndhcmRz,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00388297-zwmvlyfmfg-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">Statue of Belief</h5>
+                                <p class="card-text">Statue of Belief: Nathdwara</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width:  180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxNyBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00414566-ayyysfckdy-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">The Office Trivia Night</h5>
+                                <p class="card-text">Crazy Plant Lady Cafe - Plant Store: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card border-0" style="width: 180px">
+                            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAxMCBNYXk%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00427844-yzztvnrfvr-portrait.jpg"
+                                class="card-img-top" alt="..." style="border-radius: 10px;">
+                            <div class="card-body">
+                                <h5 class="card-title">F.R.I.E.N.D.S Trivia Night</h5>
+                                <p class="card-text">Crazy Plant Lady Cafe - Plant Store: Ahmedabad</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- footer start -->
+    <footer>
+        <div class="" style="background: #313035; height: 70px;">
+            <div class="container f1 d-flex align-items-center gap-4 p-3">
+                <img alt="hut" src="//in.bmscdn.com/webin/common/icons/hut.svg" class="">
+                <div class="text-light fw-bold fs-6">List your show</div>
+                <div class="text-light">Got a show, event, activity or a great experience? Partner with us &amp; get
+                    listed on BookMyShow</div>
+                <div class="btn btn-outline-danger rounded-0 text-light ms-5">Contact Today!</div>
+            </div>
+        </div>
+        <div class="div" style="background: #404042; height: 100px;">
+            <div class="container d-flex justify-content-around py-4">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 102 102" id="icon-callcenter" width="50px"
+                    height="50px">
+                    <path
+                        d="M68.8 29.4c0-10.4-8.4-18.8-18.8-18.8S31.2 19 31.2 29.4 39.6 48.2 50 48.2s18.8-8.4 18.8-18.8zm-35.8 0c0-9.3 7.6-17 17-17 9.3 0 17 7.6 17 17 0 9.3-7.6 17-17 17-9.3 0-17-7.6-17-17z">
+                    </path>
+                    <path
+                        d="M24 30.3c.5 0 .9-.4.9-.9C24.9 15.6 36.2 4.3 50 4.3s25.1 11.3 25.1 25.1c0 13.1-10.5 28.3-24.2 29v-3.9c0-.5-.4-.9-.9-.9s-.9.4-.9.9v8.6c0 .5.4.9.9.9s.9-.4.9-.9v-2.9c14.7-.7 26-16.8 26-30.8C76.9 14.6 64.8 2.5 50 2.5S23.1 14.6 23.1 29.4c0 .5.4.9.9.9z">
+                    </path>
+                    <path
+                        d="M68.1 63c-.6-.2-1.2-.3-1.9-.3-.9 0-2.3.7-4.9 2.1-3.2 1.7-7.7 4-10.6 4-3.2 0-8-2.3-11.5-4-2.8-1.3-4.3-2-5.3-2-.7 0-1.3.1-1.9.3C16.7 68.2 11.2 86 11.2 96.7c0 .5.4.9.9.9H88c.5 0 .9-.4.9-.9 0-10.8-5.6-28.6-20.8-33.7zM13 95.7c.3-12.1 7.2-26.8 19.6-30.9.4-.1.8-.2 1.3-.2.6 0 2.7 1 4.5 1.9 3.9 1.9 8.7 4.2 12.3 4.2 3.3 0 7.8-2.3 11.4-4.2 1.6-.8 3.6-1.9 4.1-1.9s.9.1 1.3.2C79.9 68.9 86.7 83.6 87 95.7H13zm3.6-55.3c.5 0 .9-.4.9-.9V26.3c0-.5-.4-.9-.9-.9s-.9.4-.9.9v13.2c0 .5.4.9.9.9zm66.8 0c.5 0 .9-.4.9-.9V26.3c0-.5-.4-.9-.9-.9s-.9.4-.9.9v13.2c-.1.5.4.9.9.9z">
+                    </path>
+                </svg>
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 102 102" id="icon-resend" width="50px"
+                    height="50px">
+                    <path
+                        d="M92.1 69l-5.6-13.9a1 1 0 0 0-1.1-.5c-1.9.8-4.1-.2-4.8-2.1-.4-.9-.4-1.9 0-2.8.4-.9 1.1-1.6 2-2 .2-.1.4-.2.5-.4s.1-.4 0-.6l-5.6-13.9a1 1 0 0 0-1.1-.5L61 38.5l9-20.9c.2-.4 0-.9-.4-1.1L57 11.1c-.4-.2-.9 0-1.1.4a3.3 3.3 0 0 1-4.3 1.8c-.8-.3-1.4-1-1.8-1.8-.3-.8-.3-1.7 0-2.5.1-.2.1-.4 0-.6-.1-.2-.2-.4-.4-.5L36.8 2.6c-.4-.2-.9 0-1.1.4L12.3 58.2l-3.9 1.5c-.2.2-.4.3-.4.5-.1.2-.1.4 0 .6l5.6 13.9c.2.4.7.6 1.1.5 1.9-.7 4.1.2 4.8 2 .4.9.4 1.9 0 2.8s-1.1 1.6-2 2c-.2.1-.4.2-.5.4-.1.2-.1.4 0 .6l5.4 14c.1.2.2.4.4.5.1 0 .2.1.3.1.1 0 .2 0 .3-.1l68.1-27.3c.5-.2.7-.7.6-1.2zM36.9 4.4L48 9.1c-.2 1-.2 2 .2 3 .5 1.2 1.4 2.2 2.7 2.7 2.3 1 4.8.1 6.1-1.9l11.1 4.7-9.3 21.8-4.7 1.9L59 30.2l2.5-5.8c.1-.2.1-.4 0-.6s-.2-.4-.4-.5L38 13.5c-.2-.1-.4-.1-.6 0-.2.1-.4.2-.5.4L19.1 55.5l-4.7 1.9 22.5-53zm-1.4 16.7l.8.3c.1 0 .2.1.3.1.3 0 .6-.2.8-.5.2-.4 0-.9-.4-1.1l-.8-.3 1.8-4.3 21.6 9.2-1.8 4.3-.8-.4c-.4-.2-.9 0-1.1.4-.2.4 0 .9.4 1.1l.8.3-5.1 12-30.7 12.4 14.2-33.5zM23.7 95.6l-5-12.4c1-.6 1.7-1.4 2.2-2.5.6-1.3.6-2.8 0-4.1-.8-2-2.8-3.4-5-3.4-.4 0-.8 0-1.2.1L9.8 61l66.5-26.7 5 12.4c-1 .6-1.7 1.4-2.2 2.5a4.9 4.9 0 0 0 0 4.1c.8 2 2.8 3.4 5 3.4.4 0 .8 0 1.2-.1l5 12.4-66.6 26.6z">
+                    </path>
+                    <path
+                        d="M70 42.1c-.1-.2-.2-.4-.4-.5-.2-.1-.4-.1-.6 0L20.2 61.2a1 1 0 0 0-.5 1.1L30 87.8c.1.2.2.4.4.5.1 0 .2.1.3.1.1 0 .2 0 .3-.1l42.3-17 6.4-2.6c.4-.2.6-.7.5-1.1L70 42.1zm3.5 27.3l-.3-.8a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l.4.8-34.2 13.7-.3-.7a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l.3.8-5.1 2-9.6-23.9 5.1-2 .3.8c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-.3-.8 34.1-13.7.3.8c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-.3-.8 4.9-2 9.6 23.9-4.9 2.1z">
+                    </path>
+                    <path
+                        d="M30.6 65.7c-.2-.4-.7-.6-1.1-.5s-.6.7-.5 1.1l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-1.4-3.3zm3.5 8.6a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-1.4-3.3zm32.2-22.9a1 1 0 0 0-1.1-.5 1 1 0 0 0-.5 1.1l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1l-1.4-3.3zm1.9 9.3l1.4 3.4c.1.3.4.5.8.5.1 0 .2 0 .3-.1.4-.2.6-.7.5-1.1L69.7 60a1 1 0 0 0-1.1-.5c-.4.2-.6.7-.4 1.2zm-19.5-34l3.1 1.3c.1 0 .2.1.3.1.3 0 .6-.2.8-.5.2-.4 0-.9-.4-1.1l-3.1-1.3c-.4-.2-.9 0-1.1.4-.3.4-.1.9.4 1.1zm-7.8-3.3l3.1 1.3c.1 0 .2.1.3.1.3 0 .6-.2.8-.5.2-.4 0-.9-.4-1.1l-3.1-1.3c-.4-.2-.9 0-1.1.4-.2.4 0 .9.4 1.1zm13.4 41.4c-.5 0-.8.4-.8.8 0 2.4-2 4.4-4.4 4.4s-4.4-2-4.4-4.4c0-2.3 1.9-4.2 4.2-4.3l-1.6 2.3c-.3.4-.2.9.2 1.2.1.1.3.1.5.1.3 0 .5-.1.7-.4l2.6-3.7c.3-.4.2-.9-.2-1.1L47.5 57c-.4-.3-.9-.2-1.2.2s-.2.9.2 1.2l1.9 1.4c-3 .3-5.4 2.9-5.4 5.9 0 3.3 2.7 6 6 6s6-2.7 6-6c.1-.5-.3-.9-.7-.9z">
+                    </path>
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" id="icon-newsletter" viewBox="-1 -1 102 102" width="50px"
+                    height="50px">
+                    <g id="elnewsletter">
+                        <path class="elst0"
+                            d="M97.5 90.3V33.6c0-.5-.4-1-1-1H82.9V9.8c0-.5-.4-1-1-1H18.1a1 1 0 0 0-1 1v22.8H3.5a1 1 0 0 0-1 1v56.9c0 .1.1.1.1.2v.1c0 .1.1.1.2.1.1.1.2.1.2.1.1 0 .1 0 .2.1h93.4c.1 0 .3 0 .4-.1 0 0 .1 0 .1-.1.1-.1.2-.1.2-.2v-.1c0-.1.1-.1.1-.2.1 0 .1 0 .1-.1zm-1.9-55.7v53.6L63.9 64.1l18.6-17.7 7.7-7.4c.3-.3.4-.7.2-1.1-.1-.4-.5-.6-.9-.6h-6.8v-2.7h12.9zM50.2 56.1l43.4 33.1H6.4l43.8-33.1zm32.7-16.8h4.4l-4.4 4.1v-4.1zM19.1 10.8h61.8v34.5L62.4 62.9l-11.6-8.8c-.3-.3-.8-.3-1.2 0L37.8 63 19.1 45.3V10.8zm-2 32.6l-4.4-4.1h4.4v4.1zm0-8.8v2.7h-6.8c-.4 0-.8.2-.9.6-.1.4-.1.8.2 1.1l26.5 25.2-31.8 24V34.6h12.8z">
+                        </path>
+                        <path class="elst0"
+                            d="M28.9 22.5h42.7a1 1 0 0 0 0-2H28.9c-.5 0-1 .4-1 1s.4 1 1 1zm0 10h42.7a1 1 0 0 0 0-2H28.9a1 1 0 0 0 0 2zm0 9.9h42.7a1 1 0 0 0 0-2H28.9c-.5 0-1 .4-1 1s.4 1 1 1z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div class="div" style="background: #343338; height: 850px;">
+            <div class="container">
+                <h6 class="pt-5 text-light fw-lighter" style="font-size: 14px;">Movies now showing in ahmedabad</h6>
+                <p class="text-light fw-lighter" style="font-size: 11px;">Sanam teri kasam | Badass Ravi Kumar |
+                    Loveyapa | Chhaava |
+                    Umbarro
+                    | Deva | Sky Force | Faati Ne? | Captain America: Brave New World |</p>
+            </div>
+            <div class="container">
+                <h6 class="pt-3 text-light fw-lighter" style="font-size: 14px;">Upcoming Movies in ahmedabad</h6>
+                <p class="text-light fw-lighter" style="font-size: 11px;">It's Complicated | Raju James Bond | Raja Roja
+                    | Badava | Illti
+                    | Ilu Ilu | Rhythm | Kuchuku | 14 Days (Girlfriend Intlo) |</p>
+            </div>
+            <div class="container">
+                <h6 class="pt-3 text-light fw-lighter" style="font-size: 14px;">Movies by genre</h6>
+                <p class="text-light fw-lighter" style="font-size: 11px;">Drama Movies | Romantic Movies | Action Movies
+                    | Comedy Movies |
+                    Thriller Movies
+                    | Adventure Movies | Historical movies | Animation Movies | Musical Movies |</p>
+            </div>
+            <div class="container">
+                <h6 class="pt-3 text-light fw-lighter" style="font-size: 14px;">Movies by language</h6>
+                <p class="text-light fw-lighter" style="font-size: 11px;">Movies in Hindi | Movies in English | Movies
+                    in Gujarat | Movies
+                    in Telugu | Movies in Tamil
+                    | Movies in Sindhi | Movies in Chattisgarhi | Movies in Japanese | Movies in Khasi |</p>
+            </div>
+            <div class="container">
+                <h6 class="pt-3 text-light fw-lighter" style="font-size: 14px;">Sports event in ahmedabad</h6>
+                <p class="text-light fw-lighter" style="font-size: 11px;">Cricket | Running | Football | Chess |
+                    Badminton
+                    | Boxing | Card Games | Athletics | Mixed Martial Arts |</p>
+            </div>
+            <div class="container">
+                <h6 class="pt-3 text-light fw-lighter" style="font-size: 14px;">Countries</h6>
+                <p class="text-light fw-lighter" style="font-size: 11px;">Indonesia | Singapore | UAE | Sri Lanka | West
+                    Indies |</p>
+            </div>
+            <div class="container">
+                <h6 class="pt-3 text-light fw-lighter " style="font-size: 14px;">Help</h6>
+                <p class="text-light fw-lighter mb-5" style="font-size: 11px;">About us | Contatc us | Current openings
+                    |
+                    Press release |
+                    Press covrage
+                    | Sitemap| FAQs | Term & Condition | Privacy Policy |</p>
+            </div>
+
+            <div class="row d-flex" style="margin-top: 100px;">
+                <div class="col-5" style="border: 1px solid white;"></div>
+                <div class="col-2" style="border: 1px solid white;"></div>
+                <div class="col-5" style="border: 1px solid white;"></div>
+            </div>
+
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <p class="policy fw-lighter">Copyright 2025 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.<br>The
+                content and images used on
+                this site are copyright protected and copyrights vests with the respective owners. The usage of the
+                content and images on this website is intended to promote the works and no <br>endorsement of the artist
+                shall be implied. Unauthorized use is prohibited and punishable by law.</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+
+</body>
+
+</html>

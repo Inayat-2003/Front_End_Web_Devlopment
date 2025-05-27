@@ -10,21 +10,12 @@ clicked!" using JavaScript event listeners. -->
 </head>
 
 <body>
-
-    <!-- 1) Add button in html page -->
     <button id="btn">Click Me!</button>
 
-
-    <!-- 2) create a script tag -->
     <script>
+    let button = document.getElementById('btn');
 
-    // 3) USE GETELEMENTBYID TO GET A CLICK BUTTON
-    var button = document.getElementById('btn');
-
-    // 4) use eventlistener to using the listen on click
     button.addEventListener('click', function () {
-
-    // 5) when we click button than show alert in web page
     alert('Button clicked!');
     });
     

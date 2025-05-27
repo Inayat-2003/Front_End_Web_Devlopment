@@ -1,0 +1,36 @@
+<!-- This task represents usage of scale upon hovering the curser on the image -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 240px;
+            width: 390px;
+            border: 2px solid white;
+            margin: 10px auto;
+            overflow: hidden;
+        }
+        .image{
+            height: 250px;
+            width: 400px;
+            border: 2px solid;
+            background-image: url("http://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/blog1.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            transition: .4s;
+        }
+        .main:hover .image{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="image"></div>
+    </div>
+</body>
+</html>

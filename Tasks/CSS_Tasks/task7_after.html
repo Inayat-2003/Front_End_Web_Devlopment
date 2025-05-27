@@ -1,0 +1,40 @@
+<!-- This task shows usage of "after" pseudo element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            display: inline-block;
+            background-color: orange;
+            padding: 10px 20px;
+            position: relative;
+        }
+        li::after{
+            content: "";
+            height: 5px;
+            width: 0%;
+            background-color: blue;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 0.5s;
+        }
+        li:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Men's Wear</li>
+        <li>Short Codes</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>

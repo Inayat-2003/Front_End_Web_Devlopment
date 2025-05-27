@@ -1,0 +1,55 @@
+<!-- This task shows usage of "before" pseudo element -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-image: url("https://wp.w3layouts.com/factorship/wp-content/themes/factorship/assets/images/g2.jpg");
+            height: 400px;
+            width: 600px;
+            border: 2px solid;
+            margin: 200px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .main::before{
+            content: "";
+            height: 400px;
+            width: 600px;
+            background-color: rgba(0,0,0,0.4);
+            position: absolute;
+            transform: scale(0);
+            transition: 0.3s;
+        }
+        .main:hover::before{
+            transform: scale(1);
+        }
+
+        .text{
+            text-align: center;
+            margin: 0 auto;
+            color: white;
+            opacity: 0;
+            transform: scale(0);
+            transition: 0.5s;
+        }
+        .main:hover .text{
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="text">
+            <h2>Factorship</h2>
+            <p>Lorem ipsum</p>
+        </div>
+    </div>
+</body>
+</html>

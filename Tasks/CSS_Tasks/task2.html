@@ -1,0 +1,46 @@
+<!-- This task is about a button whose border increases upon clicking -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 500px;
+            width: 500px;
+            border: 3px solid red;
+            overflow: hidden;
+            margin: 50px 300px;
+        }
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transform: translate(195px, -293px)
+        } 
+        .div2{
+            width: 80px;
+            height: 80px;
+            border: 3px solid red;
+            margin: 200px;
+            margin-top: 200px;
+            transition: 1s;
+        
+        }
+        .main:hover .div2{
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="div2"></div>
+        <div class="div1"></div>
+      </div>
+</body>
+
+</html>

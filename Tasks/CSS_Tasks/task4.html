@@ -1,0 +1,32 @@
+<!-- This task is about usage of scale on div inside the container -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+        }
+        .abc{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            transform: scale(0);
+            transition: 1s;
+        }
+        .main:hover .abc{
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="abc"></div>
+    </div>
+</body>
+</html>

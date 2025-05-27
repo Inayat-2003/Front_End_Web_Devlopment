@@ -1,0 +1,42 @@
+<!-- This task is representing the overlap of a div over the picture upon hovering -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 250px;
+            width: 200px;
+            border: 2px solid;
+            background-image: url("https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p1.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        .main .class{
+            height: 250px;
+            width: 200px;
+            background-color: rgba(0,0,0,0.3);
+            font-size: 15px;
+            color: white;
+            text-align: left;
+            line-height: 30px;
+            transition: 0.4s;
+            opacity: 0;
+        }
+        .main:hover .class{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="class">
+            <a href="https://p.w3layouts.com/demos_new/template_demo/26-08-2021/webservice-liberty-demo_Free/1229779082/web/assets/images/p1.jpg"">Link</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, quia</p>
+        </div>
+     </div>
+</body>
+</html>

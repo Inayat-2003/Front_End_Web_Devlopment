@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    color: #333;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  p{
+    margin-top: 400px;
+  }
+  p:hover{
+    color: #0056b3;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+
+  <h2>Todo List</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter a task" />
+  <button onclick="addTask()">Add Task</button>
+  <button onclick="clearTasks()">Clear</button>
+
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+    const input = document.getElementById('taskInput');
+    const task = input.value.trim();
+
+    if (task !== '') {
+    const taskList = document.getElementById('taskList');
+    taskList.innerHTML += `<li>${task}</li>`;
+    input.value = '';
+    }
+  }
+
+  function clearTasks() {
+  document.getElementById('taskList').innerHTML = '';
+  }
+  
+  </script>
+
+</body>
+</html>

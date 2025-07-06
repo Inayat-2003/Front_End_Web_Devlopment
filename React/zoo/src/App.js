@@ -10,6 +10,7 @@ import Membership from './Website/Pages/Membership';
 import Visiting from './Website/Pages/Visiting';
 import Testimonial from './Website/Pages/Testimonial';
 import Dashboard from './Admin/Apages/Dashboard';
+import Animals from './Admin/Apages/Animals';
 
 
 function App() {
@@ -22,14 +23,14 @@ function App() {
         <Route path="/services" element={<Services/>} />
         <Route path="*" element={<Errr/>} />
         <Route path="/our" element={<Our/>} />
-        <Route path="membership" element={<Membership/>} />
-        <Route path="visiting" element={<Visiting/>} />
-        <Route path="testimonial" element={<Testimonial/>} />
+        <Route path="/membership" element={<Membership/>} />
+        <Route path="/visiting" element={<Visiting/>} />
+        <Route path="/testimonial" element={<Testimonial/>} />
         <Route path="/contact" element={<Contact/>} />
 
         {/* Admin path */}
         <Route path="/dash" element={<Dashboard/>}/>
-        
+        <Route path="/animals" element={<Animals/>} />
       </Routes>
     </div>
     </BrowserRouter>

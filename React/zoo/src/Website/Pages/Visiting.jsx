@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Common/Header'
 import Navs from '../Common/Navs'
 import Footer from '../Common/Footer'
 import { Helmet } from 'react-helmet'
+import axios from 'axios'
+
 
 function Visiting() {
+    const [visit, setvisit] = useState([])
+
+    useEffect(() => {
+        fetchvisit()
+    }, [])
+
+    const fetchvisit = async () => {
+        const vis = await axios.get("http://localhost:3000/visit")
+        setvisit(vis.data)
+    }
     return (
         <div>
-             <Helmet>
+            <Helmet>
                 {/* <!-- JavaScript Libraries --> */}
                 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -21,7 +33,7 @@ function Visiting() {
                 {/* <!-- Template Javascript --> */}
                 <script src="js/main.js"></script>
             </Helmet>
-            <Header/>
+            <Header />
             <Navs title="Visiting Hours" name="Visiting" />
             {/* Visiting Hours Start */}
             <div className="container-xxl bg-primary visiting-hours py-5 wow fadeInUp" data-wow-delay="0.1s" style={{ margin: '6rem 0' }}>
@@ -29,36 +41,16 @@ function Visiting() {
                     <div className="row g-5">
                         <div className="col-md-6 wow fadeIn" data-wow-delay="0.3s">
                             <h1 className="display-6 text-white mb-5">Visiting Hours</h1>
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item">
-                                    <span>Monday</span>
-                                    <span>9:00AM - 6:00PM</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <span>Tuesday</span>
-                                    <span>9:00AM - 6:00PM</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <span>Wednesday</span>
-                                    <span>9:00AM - 6:00PM</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <span>Thursday</span>
-                                    <span>9:00AM - 6:00PM</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <span>Friday</span>
-                                    <span>9:00AM - 6:00PM</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <span>Saturday</span>
-                                    <span>9:00AM - 6:00PM</span>
-                                </li>
-                                <li className="list-group-item">
-                                    <span>Sunday</span>
-                                    <span>Closed</span>
-                                </li>
-                            </ul>
+                            {
+                                visit && visit.map((data) => {
+                                    return (<ul className="list-group list-group-flush">
+                                        <li className="list-group-item">
+                                            <span className="me-3">{data.day}</span>
+                                            <span>{data.time}</span>
+                                        </li></ul>
+                                    );
+                                })
+                            }
                         </div>
                         <div className="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
                             <h1 className="display-6 text-white mb-5">Contact Info</h1>
@@ -93,7 +85,7 @@ function Visiting() {
                 </div>
             </div>
             {/* Visiting Hours End */}
-        <Footer/>
+            <Footer />
         </div>
     )
 }

@@ -48,8 +48,8 @@ function Aheader() {
           </button>
           <div className="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
             <div className="navbar-nav ms-auto">
-              <NavLink to="/" className="nav-item nav-link">Home</NavLink>
-              <NavLink to="/about" className="nav-item nav-link">About</NavLink>
+              <NavLink to="/dash" className="nav-item nav-link">Dashboard</NavLink>
+              <NavLink to="/animals" className="nav-item nav-link">Animals</NavLink>
               <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
               <div className="nav-item dropdown">
                 <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import AHeader from '../Acoman/AHeader'
-import ANavs from '../Acoman/ANavs'
+import Aheader from '../Acommon/Aheader'
+import Anavs from '../Acommon/Anavs'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import { Link } from 'react-router-dom'
 
-function ServiceManage() {
+function Animanage() {
 
-    const [service, setservice] = useState([])
+    const [animals, setanimals] = useState([])
 
     useEffect(() => {
         fetchdata()
@@ -14,44 +15,43 @@ function ServiceManage() {
 
     // all product
     const fetchdata = async () => {
-        const res = await axios.get("http://localhost:3000/services")
+        const res = await axios.get("http://localhost:3000/our")
         // console.log(res.data)
-        setservice(res.data)
+        setanimals(res.data)
     }
 
-    const [singlepro, setsinglepro] = useState({
+    const [singleani, setsingleani] = useState({
         id: "",
-        title: "",
+        type: "",
         img: "",
-        desc: ""
+        Aname: ""
     })
 
-    const product = async (id) => {
-        const res = await axios.get(`http://localhost:3000/services/${id}`)
+    const animal = async (id) => {
+        const res = await axios.get(`http://localhost:3000/our/${id}`)
         console.log(res.data)
-        setsinglepro(res.data)
+        setsingleani(res.data)
     }
 
     // delete product
-    const deletepro = async (id) => {
-        const res = await axios.delete(`http://localhost:3000/services/${id}`)
+    const deleteani = async (id) => {
+        const res = await axios.delete(`http://localhost:3000/our/${id}`)
         // console.log(res.data)
-        toast.success("Product delete successfully..!")
+        toast.success("Data deleted successfully..!")
         fetchdata()
     }
 
     // update model
-    const [updatepro, setupdatepro] = useState(null)
-    // udpate get and change
+    const [updateani, setupdateani] = useState(null)
     const [edited, setedited] = useState({
         id: "",
-        title: "",
+        type: "",
         img: "",
-        desc: ""
+        Aname: ""
     })
 
     const saveedite = (data) => {
-        setupdatepro(data)
+        setupdateani(data)
         setedited(data)
         console.log(data)
     }
@@ -69,16 +69,16 @@ function ServiceManage() {
 
         try {
 
-            const res = await axios.put(`http://localhost:3000/services/${edited.id}`, edited)
+            const res = await axios.put(`http://localhost:3000/our/${edited.id}`, edited)
             // console.log(res.data)
-            toast.success("update successfullyy..!")
+            toast.success("updated successfullyy..!")
             fetchdata()
-            setupdatepro(null)
+            setupdateani(null)
             setedited({
                 id: "",
-                title: "",
+                type: "",
                 img: "",
-                desc: ""
+                Aname: ""
             })
 
         } catch (error) {
@@ -90,37 +90,38 @@ function ServiceManage() {
 
     return (
         <div>
-            <AHeader />
-            <ANavs title="Service Manage" name="Service" />
+            <Aheader />
+            <Anavs title="Service Manage" name="Service" />
             <div className="container">
-                <h1 className='text-center'>Hello this Service Manage</h1>
+                <h1 className='text-center'>Hello, this is Animal Manage</h1>
+                   <Link to="/aniadd" className="btn btn-primary py-3 px-5 mt-3">Add Animal</Link>
                 <table className="table">
                     <thead>
                         <tr className='text-center'>
                             <th scope="col">#ID</th>
-                            <th scope="col">Title</th>
+                            <th scope="col">Name</th>
                             <th scope="col">Image</th>
-                            <th scope="col">desc</th>
+                            <th scope="col">Type</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         {
-                            service && service.map((data, index) => {
+                            animals && animals.map((data, index) => {
                                 // console.log(data)
                                 return (
                                     <tr className='text-center' key={index}>
                                         <th scope="row">{data.id}</th>
-                                        <td>{data.title}</td>
+                                        <td>{data.Aname}</td>
                                         <td>
                                             <img src={data.img} style={{ width: "70px", height: "70px" }} alt="" />
                                         </td>
-                                        <td>{data.desc}</td>
+                                        <td>{data.type}</td>
                                         <td>
-                                            <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick={() => product(data.id)} >View</button>
+                                            <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#staticBackdrop" onClick={() => animal(data.id)} >View</button>
                                             <button className='btn btn-success mx-2' onClick={() => saveedite(data)}>Edit</button>
-                                            <button className='btn btn-danger' onClick={() => deletepro(data.id)}>Delete</button>
+                                            <button className='btn btn-danger' onClick={() => deleteani(data.id)}>Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -132,40 +133,40 @@ function ServiceManage() {
 
                 {
 
-                    updatepro && (
+                    updateani && (
                         <div className="conatiner py-5" >
                             <div className="col-lg-8 mx-auto wow fadeInRight" data-wow-delay="0.3">
 
-                                <h1 className="display-5 mb-4">Service Update</h1>
+                                <h1 className="display-5 mb-4">Animals Update</h1>
 
                                 <form >
                                     <div className="row g-4">
-                                        <div className="col-12 ">
+                                         <div className="col-12">
                                             <div className="form-floating">
-                                                <input name='title' value={edited.title} onChange={getchnage} type="text" className="form-control" id="name" placeholder="Your Title" />
-                                                <label htmlFor="name">Your Title</label>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-12">
-                                            <div className="form-floating">
-                                                <input type="url" value={edited.img} name='img' onChange={getchnage} className="form-control" id="subject" placeholder="Subject" />
-                                                <label htmlFor="subject">Your image</label>
+                                                <input name='name' value={edited.Aname} onChange={getchnage} type="text" className="form-control" id="name" placeholder="Animal Type" />
+                                                <label htmlFor="message">Animal Name</label>
                                             </div>
                                         </div>
                                         <div className="col-12">
                                             <div className="form-floating">
-                                                <textarea name='desc' value={edited.desc} onChange={getchnage} className="form-control" placeholder="Leave a message here" id="message" style={{ height: 160 }} defaultValue={""} />
-                                                <label htmlFor="message">Message Descrition</label>
+                                                <input type="url" value={edited.img} name='img' onChange={getchnage} className="form-control" id="animg" placeholder="Image" />
+                                                <label htmlFor="subject">Animal image</label>
                                             </div>
                                         </div>
+                                          <div className="col-12 ">
+                                            <div className="form-floating">
+                                                <input name='title' value={edited.type} onChange={getchnage} type="text" className="form-control" id="type" placeholder="Animal Type" />
+                                                <label htmlFor="name">Animal Type</label>
+                                            </div>
+                                        </div>
+                                       
                                         <div className="col-12">
                                             <div className="row">
                                                 <div className="col">
-                                                    <button className="btn btn-primary w-100 py-3" onClick={getupdate}>Service Update</button>
+                                                    <button className="btn btn-primary w-100 py-3" onClick={getupdate}>Animal Update</button>
                                                 </div>
                                                 <div className="col">
-                                                    <button className="btn btn-primary w-100 py-3" onClick={() => setupdatepro(null)}>Service Exit</button>
+                                                    <button className="btn btn-primary w-100 py-3" onClick={() => setupdateani(null)}>Exit</button>
                                                 </div>
                                             </div>
 
@@ -188,11 +189,11 @@ function ServiceManage() {
                             </div>
                             <div className="modal-body">
                                 <div className="card" style={{ width: "100%" }}>
-                                    <img src={singlepro.img} style={{ height: "250px" }} className="card-img-top" alt="..." />
+                                    <img src={singleani.img} style={{ height: "250px" }} className="card-img-top" alt="..." />
                                     <div className="card-body">
-                                        <h5 className="card-title">{singlepro.id}</h5>
-                                        <h5 className="card-title">{singlepro.title}</h5>
-                                        <p className="card-text">{singlepro.desc}</p>
+                                        <h5 className="card-title">{singleani.id}</h5>
+                                        <h5 className="card-title">{singleani.Aname}</h5>
+                                        <p className="card-text">{singleani.type}</p>
                                     </div>
                                 </div>
 
@@ -203,15 +204,10 @@ function ServiceManage() {
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
 
         </div>
     )
 }
 
-export default ServiceManage
+export default Animanage

@@ -47,7 +47,7 @@ function Register() {
 
             const res = await axios.post("http://localhost:3000/users", form)
             console.log(res.data)
-            toast.success("register data successfully..")
+            toast.success("Registered user successfully..")
             redirect("/login")
             setform({
                 id: "",

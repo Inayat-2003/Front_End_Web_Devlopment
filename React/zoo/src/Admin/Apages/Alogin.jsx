@@ -44,23 +44,13 @@ function Alogin() {
             
             const {email,password} = form
 
-            // if(email == "" || password == ""){
-            //     console.log("Pls required this field..!")
-            //     toast.error("Pls required this field..!")
-            //     return false
-            // }
-
-            // empty data
             if(!email.trim() || !password.trim()){
-                console.log("Pls required this field..!")
-                toast.error("Pls required this field..!")
+                console.log("Pls fill the required field..!")
+                toast.error("Pls fill the required field..!")
                 return false
             }
 
             const res = await axios.get(`http://localhost:3000/admin?email=${email}`)
-            console.log(res.data)
-
-            // email not match
             if(res.data.length == 0){
                 console.log("Email does not match..!")
                 toast.error("Email does not match..!")
@@ -107,8 +97,7 @@ function Alogin() {
                                     <MDBInput value={form.email} onChange={getchnage} name='email' wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Email address' id='formControlLg' type='email' size="lg" />
                                     <MDBInput value={form.password} onChange={getchnage} name='password' wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' id='formControlLg' type='password' size="lg" />
 
-                                    <p className="small mb-3 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
-                                    <MDBBtn outline className='mx-2 px-5' color='white' size='lg'>
+                                    <MDBBtn outline className='mx-2 px-5' color='red' size='lg'>
                                         Login
                                     </MDBBtn>
 

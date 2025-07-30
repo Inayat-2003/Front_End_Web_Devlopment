@@ -1,7 +1,23 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Header() {
+   const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Uid")){
+            redirect("/login")
+        }
+    })
+
+    const logout=()=>{
+        localStorage.removeItem("Uid")
+        localStorage.removeItem("Uname")
+        toast.success("Logout successfully..!")
+        redirect("/login")
+    }
   return (
     <div>
       <div>
@@ -62,7 +78,35 @@ function Header() {
               </div>
               <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
             </div>
-            <a href className="btn btn-primary">Buy Ticket<i className="fa fa-arrow-right ms-3" /></a>
+            {
+              (() => {
+                if (localStorage.getItem("Uid")) {
+                  return (
+                    <>
+                      <Link className="nav-item nav-link">Hello.. {localStorage.getItem("Uname")}</Link>
+                    </>
+                  )
+                }
+              })()
+            }
+            {
+              (() => {
+                if (localStorage.getItem("Uid")) {
+                  return (
+                    <>
+                      <Link className="nav-item nav-link" onClick={logout}>Logout</Link>
+                    </>
+                  )
+                }
+                else {
+                  return (
+                    <>
+                      <Link to="/login" className="nav-item nav-link">Login</Link>
+                    </>
+                  )
+                }
+              })()
+            }
           </div>
         </nav>
         {/* Navbar End */}

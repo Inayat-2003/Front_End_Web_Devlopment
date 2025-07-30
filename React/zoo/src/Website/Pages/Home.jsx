@@ -109,7 +109,7 @@ function Home() {
                                     <i className="far fa-check-circle text-primary me-3" />World Best
                                     Animals
                                 </h5>
-                                <Link to="/about" className="btn btn-primary py-3 px-5 mt-3" href>Read More</Link>
+                                <Link to="/about" className="btn btn-primary py-3 px-5 mt-3">Read More</Link>
                             </div>
                             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div className="img-border">

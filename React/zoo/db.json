@@ -1,145 +1,142 @@
 {
-    "admin": [
-        {
-            "id": "1",
-            "name": "Admin",
-            "email": "admin@gmail.com",
-            "password": "1234"
-        },
-        {
-            "id": "2",
-            "name": "subAdmin",
-            "email": "admin1@gmail.com",
-            "password": "4321"
-        }
-    ],
-    "user": [
-        {
-            "id": "1",
-            "name": "user1",
-            "email": "user1@gmail.com",
-            "password": "1234",
-            "img": "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "status": "unblock"
-        },
-        {
-            "id": "2",
-            "name": "user2",
-            "email": "user2@gmail.com",
-            "password": "4321",
-            "img": "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "status": "block"
-        },
-        {
-            "id": "3",
-            "name": "user3",
-            "email": "user3@gmail.com",
-            "password": "123456",
-            "img": "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=600",
-            "status": "unblock"
-        },
-        {
-            "id": "1746686137151",
-            "name": "nishil1 patel",
-            "email": "nishil@gmail.com",
-            "password": "123456",
-            "img": "https://images.pexels.com/photos/36355/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
-            "status": "unblock"
-        }
-    ],
-    "our": [
-        {
-            "id": "1",
-            "type": "Animal",
-            "Aname": "Tiger",
-            "img": "https://images.pexels.com/photos/145971/pexels-photo-145971.jpeg?_gl=1*1klrudc*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5NTYyJGo3JGwwJGgw"
-        },
-        {
-            "id": "2",
-            "type": "Bird",
-            "Aname": "Parrot",
-            "img": "https://images.pexels.com/photos/105808/pexels-photo-105808.jpeg?_gl=1*1scu7d2*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5NjI0JGo0NCRsMCRoMA.."
-        },
-        {
-            "id": "2",
-            "type": "Animal",
-            "Aname": "Wolf",
-            "img": "https://images.pexels.com/photos/31712664/pexels-photo-31712664.jpeg?_gl=1*158nuo3*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5NjczJGo1OSRsMCRoMA.."
-        },
-        {
-            "id": "4",
-            "type": "Bird",
-            "Aname": "Ostrich",
-            "img": "https://images.pexels.com/photos/18000428/pexels-photo-18000428.jpeg?_gl=1*tzab9r*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5OTgwJGozNSRsMCRoMA.."
-        },
-        {
-            "id": "5",
-            "type": "Animal",
-            "Aname": "Elephant",
-            "img": "https://images.pexels.com/photos/7122711/pexels-photo-7122711.jpeg?_gl=1*1eh6b2g*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzgwMDg1JGo2MCRsMCRoMA.."
-        },
-        {
-            "id": "6",
-            "type": "Animal",
-            "Aname": "Meerkat",
-            "img": "https://media.istockphoto.com/id/90965972/photo/slender-tailed-meerkats.jpg?s=612x612&w=0&k=20&c=I_ujYMMnO0wWtMuvPrzNS8sqM27iuFN1b3fjp06Tsqo="
-        }  
-    ],
-    "member": [
-        {
-            "image": "",
-            "display": "",
-            "type": "",
-            "price": ""
-        },
-         {
-            "image": "",
-            "display": "",
-            "type": "",
-            "price": ""
-        },
-         {
-            "image": "",
-            "display": "",
-            "type": "",
-            "price": ""
-        }
-    ],
-    "visit": [
-        {
-            "id": "1",
-            "day": "Monday",
-            "time": "9:00AM - 6:00PM"
-        },
-        {
-            "id": "2",
-            "day": "Tuesday",
-            "time": "9:00AM - 6:00PM"
-        },
-        {
-            "id": "3",
-            "day": "Wednesday",
-            "time": "9:00AM - 6:00PM"
-        },
-        {
-            "id": "4",
-            "day": "Thursday",
-            "time": "9:00AM - 6:00PM"
-        },
-        {
-            "id": "5",
-            "day": "Friday",
-            "time": "9:00AM - 6:00PM"
-        },
-        {
-            "id": "6",
-            "day": "Saturday",
-            "time": "9:00AM - 6:00PM"
-        },
-        {
-            "id": "7",
-            "day": "Sunday",
-            "time": "Closed"
-        }
-    ]
+  "admin": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "subAdmin",
+      "email": "admin1@gmail.com",
+      "password": "4321"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "1234",
+      "img": "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "4321",
+      "img": "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "status": "block"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "password": "123456",
+      "img": "https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "status": "unblock"
+    },
+    {
+      "id": "1746686137151",
+      "name": "nishil1 patel",
+      "email": "nishil@gmail.com",
+      "password": "123456",
+      "img": "https://images.pexels.com/photos/36355/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600",
+      "status": "unblock"
+    },
+    {
+      "id": "1753855935142",
+      "name": "inayat",
+      "email": "inayat@gmail.com",
+      "password": "12345",
+      "status": "unblock"
+    },
+    {
+      "id": "1753856119758",
+      "name": "amidhar",
+      "email": "abc@gmail.com",
+      "password": "123456",
+      "status": "unblock"
+    }
+  ],
+  "our": [
+    {
+      "id": "1",
+      "type": "Animal",
+      "Aname": "Tiger",
+      "img": "https://images.pexels.com/photos/145971/pexels-photo-145971.jpeg?_gl=1*1klrudc*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5NTYyJGo3JGwwJGgw"
+    },
+    {
+      "id": "2",
+      "type": "Bird",
+      "Aname": "Parrot",
+      "img": "https://images.pexels.com/photos/105808/pexels-photo-105808.jpeg?_gl=1*1scu7d2*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5NjI0JGo0NCRsMCRoMA.."
+    },
+    {
+      "id": "2",
+      "type": "Animal",
+      "Aname": "Wolf",
+      "img": "https://images.pexels.com/photos/31712664/pexels-photo-31712664.jpeg?_gl=1*158nuo3*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5NjczJGo1OSRsMCRoMA.."
+    },
+    {
+      "id": "4",
+      "type": "Bird",
+      "Aname": "Ostrich",
+      "img": "https://images.pexels.com/photos/18000428/pexels-photo-18000428.jpeg?_gl=1*tzab9r*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzc5OTgwJGozNSRsMCRoMA.."
+    },
+    {
+      "id": "5",
+      "type": "Animal",
+      "Aname": "Elephant",
+      "img": "https://images.pexels.com/photos/7122711/pexels-photo-7122711.jpeg?_gl=1*1eh6b2g*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzgwMDg1JGo2MCRsMCRoMA..",
+      "title": "Anima",
+      "name": "Elephan",
+      "undefined": "Animals"
+    },
+    {
+      "id": "6",
+      "type": "Animal",
+      "Aname": "Meerkat",
+      "img": "https://media.istockphoto.com/id/90965972/photo/slender-tailed-meerkats.jpg?s=612x612&w=0&k=20&c=I_ujYMMnO0wWtMuvPrzNS8sqM27iuFN1b3fjp06Tsqo="
+    }
+  ],
+  "visit": [
+    {
+      "id": "1",
+      "day": "Monday",
+      "time": "9:00AM - 6:00PM"
+    },
+    {
+      "id": "2",
+      "day": "Tuesday",
+      "time": "9:00AM - 6:00PM"
+    },
+    {
+      "id": "3",
+      "day": "Wednesday",
+      "time": "9:00AM - 6:00PM"
+    },
+    {
+      "id": "4",
+      "day": "Thursday",
+      "time": "9:00AM - 6:00PM"
+    },
+    {
+      "id": "5",
+      "day": "Friday",
+      "time": "9:00AM - 6:00PM"
+    },
+    {
+      "id": "6",
+      "day": "Saturday",
+      "time": "9:00AM - 6:00PM"
+    },
+    {
+      "id": "7",
+      "day": "Sunday",
+      "time": "Closed"
+    }
+  ]
 }

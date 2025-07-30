@@ -1,10 +1,28 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react';
+import { toast } from 'react-toastify'
 
 function Aheader() {
+
+  const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Aid")){
+            redirect("/alogin")
+        }
+    })
+
+    const logout=()=>{
+        localStorage.removeItem("Aid")
+        localStorage.removeItem("Aname")
+        redirect("/alogin")
+        toast.success("Logout successfully..!")
+    }
+
   return (
     <div>
-        <div>
+      <div>
         {/* Topbar Start */}
         <div className="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
           <div className="row gx-0 d-none d-lg-flex">
@@ -39,7 +57,7 @@ function Aheader() {
           class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
           data-wow-delay="0.1s"
         >
-          <Link to="/" className="navbar-brand p-0">
+          <Link to="/dash" className="navbar-brand p-0">
             <img className="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon" />
             <h1 className="m-0 text-primary">Zoofari</h1>
           </Link>
@@ -49,20 +67,36 @@ function Aheader() {
           <div className="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
             <div className="navbar-nav ms-auto">
               <NavLink to="/dash" className="nav-item nav-link">Dashboard</NavLink>
-              <NavLink to="/animals" className="nav-item nav-link">Animals</NavLink>
+              <NavLink to="/animanage" className="nav-item nav-link">Animals</NavLink>
               <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
-              <div className="nav-item dropdown">
-                <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                <div className="dropdown-menu rounded-0 rounded-bottom m-0">
-                  <NavLink to="/our" className="dropdown-item">Our Animals</NavLink>
-                  <NavLink to="/membership" className="dropdown-item">Membership</NavLink>
-                  <NavLink to="/visiting" className="dropdown-item">Visiting Hours</NavLink>
-                  <NavLink to="/testimonial" className="dropdown-item">Testimonial</NavLink>
-                </div>
-              </div>
               <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
             </div>
-            <a href className="btn btn-primary">Buy Ticket<i className="fa fa-arrow-right ms-3" /></a>
+            {(() => {
+              if (localStorage.getItem("Aid")) {
+                return (
+                  <>
+                    <Link className="nav-item nav-link">Hi.. {localStorage.getItem("Aname")}</Link>
+                  </>
+                )
+              }
+            })()}
+
+            {(() => {
+              if (localStorage.getItem("Aid")) {
+                return (
+                  <>
+                    <Link onClick={logout} className="nav-item nav-link">Logout</Link>
+                  </>
+                )
+              }
+              else {
+                return (
+                  <>
+                    <Link to="/alogin" className="nav-item nav-link">Alogin</Link>
+                  </>
+                )
+              }
+            })()}
           </div>
         </nav>
         {/* Navbar End */}

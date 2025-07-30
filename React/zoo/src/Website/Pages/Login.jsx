@@ -44,14 +44,7 @@ function Login() {
         try {
             
             const {email,password} = form
-
-            // if(email == "" || password == ""){
-            //     console.log("Pls required this field..!")
-            //     toast.error("Pls required this field..!")
-            //     return false
-            // }
-
-            // empty data
+            
             if(!email.trim() || !password.trim()){
                 console.log("Pls required this field..!")
                 toast.error("Pls required this field..!")
@@ -115,7 +108,7 @@ function Login() {
                                     <MDBInput value={form.email} onChange={getchnage} name='email' wrapperClass='mb-4 w-100' label='Email address' id='formControlLg' type='email' size="lg" />
                                     <MDBInput value={form.password} onChange={getchnage} name='password' wrapperClass='mb-4 w-100' label='Password' id='formControlLg' type='password' size="lg" />
 
-                                    <h5>create <Link to="/newdata">new Account</Link></h5>
+                                    <h5>Create <Link to="/register">New Account</Link> Or <Link to="/alogin">Admin ?</Link></h5>
 
                                     <MDBBtn size='lg' onClick={getsubmit}>
                                         Login

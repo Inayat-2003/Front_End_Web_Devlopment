@@ -7,7 +7,6 @@ function Dashboard() {
     <div>
         <Aheader/>
         <Anavs title="Admin Dashboard" name="Dash" />
-        import React from 'react';
 
     <div className="d-flex" style={{ height: '100vh' }}>
       <div

@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
-import AHeader from '../Acoman/AHeader'
-import ANavs from '../Acoman/ANavs'
+import Aheader from '../Acommon/Aheader'
+import Anavs from '../Acommon/Anavs'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
-function ServiceAdd() {
+function Aniadd() {
 
     const redirect = useNavigate()
 
     const [form, setform] = useState({
         id: "",
-        title: "",
+        type: "",
         img: "",
-        desc: ""
+        name: ""
     })
 
     // form halding 
@@ -34,21 +34,21 @@ function ServiceAdd() {
 
         try {
 
-            if (form.title == "" || form.desc == "" || form.img == "") {
-                console.log("Pls required this field...!")
-                toast.error("Pls required this field...!")
+            if (form.type == "" || form.name == "" || form.img == "") {
+                console.log("Pls fill required field...!")
+                toast.error("Pls fill required field...!")
                 return false
             }
 
-            const res = await axios.post("http://localhost:3000/services", form)
+            const res = await axios.post("http://localhost:3000/our", form)
             console.log(res.data)
-            redirect("/serviceManage")
-            toast.success("Service Add successfully..!")
+            redirect("/animals")
+            toast.success("Animal Added successfully..!")
             setform({
                 id: "",
-                title: "",
+                type: "",
                 img: "",
-                desc: ""
+                name: ""
             })
 
         } catch (error) {
@@ -58,36 +58,35 @@ function ServiceAdd() {
 
     return (
         <div>
-            <AHeader />
-            <ANavs title="Service Add" name="Service" />
+            <Aheader />
+            <Anavs title="Animal Add" name="Aniadd" />
             <div className="conatiner py-5" >
                 <div className="col-lg-8 mx-auto wow fadeInRight" data-wow-delay="0.3">
-
-                    <h1 className="display-5 mb-4">Service Add</h1>
+                    <h1 className="display-5 mb-4">Animal Add</h1>
 
                     <form onSubmit={getsubmit}>
                         <div className="row g-4">
                             <div className="col-12 ">
                                 <div className="form-floating">
-                                    <input value={form.title} name='title' onChange={getchnage} type="text" className="form-control" id="name" placeholder="Your Title" />
-                                    <label htmlFor="name">Your Title</label>
+                                    <input value={form.name} name='name' onChange={getchnage} type="text" className="form-control" id="name" placeholder="Animal Name" />
+                                    <label htmlFor="name">Animal Name</label>
                                 </div>
                             </div>
 
                             <div className="col-12">
                                 <div className="form-floating">
-                                    <input type="url" value={form.img} name='img' onChange={getchnage} className="form-control" id="subject" placeholder="Subject" />
-                                    <label htmlFor="subject">Your image</label>
+                                    <input type="url" value={form.img} name='img' onChange={getchnage} className="form-control" id="animg" placeholder="Image" />
+                                    <label htmlFor="subject">Animal image</label>
                                 </div>
                             </div>
                             <div className="col-12">
                                 <div className="form-floating">
-                                    <textarea value={form.desc} name='desc' onChange={getchnage} className="form-control" placeholder="Leave a message here" id="message" style={{ height: 160 }} defaultValue={""} />
-                                    <label htmlFor="message">Message Descrition</label>
+                                     <input value={form.type} name='type' onChange={getchnage} type="text" className="form-control" id="type" placeholder="Animal Type" />
+                                    <label htmlFor="message">Animal Type</label>
                                 </div>
                             </div>
                             <div className="col-12">
-                                <button className="btn btn-primary w-100 py-3">Service add</button>
+                                <button className="btn btn-primary w-100 py-3">Add</button>
                             </div>
                         </div>
                     </form>
@@ -97,4 +96,4 @@ function ServiceAdd() {
     )
 }
 
-export default ServiceAdd
+export default Aniadd

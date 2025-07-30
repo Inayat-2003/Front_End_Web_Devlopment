@@ -1,19 +1,19 @@
 {
      "users": [
     {
-      "id": "1",
-      "firstName": "user1",
-      "email": "user@gmail.com",
-      "password": "1234",
-      "status": "unblock",
-      "lastName" : "acc"
-    },
-    {
-      "id": "1751435054376",
-      "name": "manav",
-      "email": "manav@gmail.com",
-      "password": "123456",
-      "status": "unblock"
+      "id": "",
+        "email": "",
+        "password": "",
+        "confirmPassword": "",
+        "firstname": "",
+        "lastname": "",
+        "phone": "",
+        "address": "",
+        "country": "",
+        "town": "",
+        "region": "",
+        "zip": "",
+        "status": ""
     }
   ]
 }

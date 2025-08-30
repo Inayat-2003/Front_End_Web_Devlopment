@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../Common/Header'
 import Navs from '../Common/Navs'
 import Footer from '../Common/Footer'
 import { Helmet } from 'react-helmet'
+import axios from 'axios'
 
 function About() {
+
+    const [clients, setclients] = useState([])
+
+    useEffect(() => {
+        fetchdata()
+    }, [])
+
+
+    const fetchdata = async () => {
+        const res = await axios.get("http://localhost:3000/testimonials")
+        setclients(res.data)
+    }
+
     return (
         <div>
-             <Helmet>
-                
+            <Helmet>
+
                 {/* <!-- JavaScript Libraries --> */}
                 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -24,7 +38,7 @@ function About() {
             </Helmet>
             <Header />
             <Navs title="About Us" name="About" />
- 
+
             <div>
                 {/* About Start */}
                 <div className="container-xxl py-5">
@@ -57,11 +71,11 @@ function About() {
                                     <i className="far fa-check-circle text-primary me-3" />World Best
                                     Animals
                                 </h5>
-                                <a className="btn btn-primary py-3 px-5 mt-3" href>Read More</a>
+                                <a className="btn btn-primary py-3 px-5 mt-3" href="#">Read More</a>
                             </div>
                             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div className="img-border">
-                                    <img className="img-fluid" src="https://images.pexels.com/photos/16237228/pexels-photo-16237228.jpeg?_gl=1*klc5mp*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIxOTkyJGo1OSRsMCRoMA.." alt />
+                                    <img className="img-fluid" src="https://images.pexels.com/photos/16237228/pexels-photo-16237228.jpeg?_gl=1*klc5mp*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIxOTkyJGo1OSRsMCRoMA.." alt="#" />
                                 </div>
                             </div>
                         </div>
@@ -96,56 +110,6 @@ function About() {
                     </div>
                 </div>
                 {/* Facts End */}
-                {/* Testimonial Start */}
-                <div className="container-xxl py-5">
-                    <div className="container">
-                        <h1 className="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                            Our Clients Say!
-                        </h1>
-                        <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                            <div className="testimonial-item text-center">
-                                <img className="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style={{ width: 100, height: 100 }} />
-                                <div className="testimonial-text rounded text-center p-4">
-                                    <p>
-                                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                                        clita erat magna elitr erat sit sit erat at rebum justo sea
-                                        clita.
-                                    </p>
-                                    <h5 className="mb-1">Patient Name</h5>
-                                    <span className="fst-italic">Profession</span>
-                                </div>
-                            </div>
-                            <div className="testimonial-item text-center">
-                                <img className="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style={{ width: 100, height: 100 }} />
-                                <div className="testimonial-text rounded text-center p-4">
-                                    <p>
-                                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                                        clita erat magna elitr erat sit sit erat at rebum justo sea
-                                        clita.
-                                    </p>
-                                    <h5 className="mb-1">Patient Name</h5>
-                                    <span className="fst-italic">Profession</span>
-                                </div>
-                            </div>
-                            <div className="testimonial-item text-center">
-                                <img className="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style={{ width: 100, height: 100 }} />
-                                <div className="testimonial-text rounded text-center p-4">
-                                    <p>
-                                        Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                                        duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                                        clita erat magna elitr erat sit sit erat at rebum justo sea
-                                        clita.
-                                    </p>
-                                    <h5 className="mb-1">Patient Name</h5>
-                                    <span className="fst-italic">Profession</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                {/* Testimonial End */}
             </div>
 
 

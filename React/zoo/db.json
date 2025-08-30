@@ -179,28 +179,5 @@
       "image": "https://media.istockphoto.com/id/1217368803/vector/young-man-relaxing-at-couch-under-air-conditioner.jpg?s=612x612&w=0&k=20&c=YhdtVQrEhLT3H_AMc8-RHJWQk4_Sd-CZk3naMG327hI=",
       "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
     }
-  ],
-  "testimonials" : [
-    {
-      "id": 1,
-      "image": "https://www.pexels.com/photo/a-woman-wearing-a-white-long-sleeves-standing-14156554/",
-      "text": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
-      "name": "Patient Name",
-      "profession": "Profession"
-    },
-    {
-      "id": 2,
-      "image": "https://www.pexels.com/photo/serious-director-talking-on-cellphone-in-cozy-office-4491476/",
-      "text": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
-      "name": "Patient Name",
-      "profession": "Profession"
-    },
-    {
-      "id": 3,
-      "image": "https://www.pexels.com/photo/man-in-suit-sitting-with-cellphone-17739180/",
-      "text": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
-      "name": "Patient Name",
-      "profession": "Profession"
-    }
   ]
 }

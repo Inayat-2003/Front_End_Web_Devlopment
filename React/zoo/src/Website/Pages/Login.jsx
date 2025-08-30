@@ -11,7 +11,6 @@ import {
     MDBCheckbox
 }
     from 'mdb-react-ui-kit';
-import { toast } from 'react-toastify';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 
@@ -46,8 +45,8 @@ function Login() {
             const {email,password} = form
             
             if(!email.trim() || !password.trim()){
-                console.log("Pls required this field..!")
-                toast.error("Pls required this field..!")
+                console.log("Pls fill the required field..!")
+                alert("Pls fill the required field..!")
                 return false
             }
 
@@ -57,7 +56,7 @@ function Login() {
             // email not match
             if(res.data.length == 0){
                 console.log("Email does not match..!")
-                toast.error("Email does not match..!")
+                alert("Email does not match..!")
                 return false
             }
 
@@ -68,26 +67,26 @@ function Login() {
             // password does match
             if(user.password !==password){
                 console.log("password does not match..")
-                toast.error("password does not match..")
+                alert("password does not match..")
                 return false
             }
 
             // status match
             if(user.status == "block"){
                 console.log("Account has been block..")
-                toast.error("Account has been block..")
+                alert("Account has been block..")
                 return false
             }
 
             localStorage.setItem("Uid",user.id)
             localStorage.setItem("Uname",user.name)
             redirect("/")
-            toast.success("Succesfully login..!")
+            alert("Succesfully login..!")
             console.log("Successfully login..")
 
         } catch (error) {
             console.log("api data not Found",error)
-            toast.error("api data not found.")
+            alert("api data not found.")
         }
     }
 

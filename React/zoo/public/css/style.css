@@ -106,7 +106,7 @@
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -308,7 +308,7 @@
     border-color: var(--primary);
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: var(--light);
 }
 
@@ -375,31 +375,43 @@
 
 
 /*** Animal ***/
+.anicontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
 .animal-item {
-    position: relative;
-    display: block;
+  position: relative;
+  width: 100%;
+  height: 100%; 
+}
+
+.animal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .animal-item .animal-text {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, .7);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 100px !important;
-    opacity: 0;
-    transition: .5s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 100px !important;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .animal-item:hover .animal-text {
-    opacity: 1;
-    padding-bottom: 20px !important;
+  opacity: 1;
+  padding-bottom: 20px !important;
 }
-
 
 /*** Membership ***/
 .membership-item {
@@ -448,6 +460,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -455,6 +468,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
@@ -483,7 +497,7 @@
 
 .testimonial-carousel .owl-item.center .testimonial-item img {
     border-color: var(--primary) !important;
-} 
+}
 
 .testimonial-carousel .owl-nav {
     position: absolute;

@@ -55,32 +55,26 @@ function Our() {
                 </div>
             </div>
             {/* Animal End */}
+            <div class="anicontainer">
             {
                 animal && animal.map((data) => {
                     return (
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div className="row g-4">
-                                    <div className="col-12">
-                                        <a className="animal-item" href={data.img} data-lightbox="animal">
-                                            <div className="position-relative">
-                                                <img className="img-fluid" src={data.img} alt />
-                                                <div className="animal-text p-4">
-                                                    <h5 className="text-white mb-0">{data.Aname}</h5>
-                                                    <p className="text-white small text-uppercase mb-0">{data.type}</p>
-                                                </div>
-                                            </div>
-                                        </a>
+                    <div className="card">
+                        <a className="animal-item" href={data.img} data-lightbox="animal">
+                            <div className="position-relative">
+                                <img className="img-fluid" src={data.img} alt="img" />
+                                    <div className="animal-text p-4">
+                                    <h5 className="text-white mb-0">{data.Aname}</h5>
+                                    <p className="text-white small text-uppercase mb-0">{data.type}</p>
                                     </div>
-                        
-                                </div>
                             </div>
-                            )
+                        </a>
+                    </div>
+                    )
                 })
             }
-
+             </div>
             <Footer />
-        </div>
-    )
-}
-
+             </div>
+        )}
 export default Our

@@ -8,7 +8,6 @@ import {
     MDBCheckbox
 }
     from 'mdb-react-ui-kit';
-import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
@@ -40,14 +39,14 @@ function Register() {
         try {
 
             if (!form.email.trim() || !form.password.trim() || !form.name.trim()) {
-                console.log("pls require data")
-                toast.error("pls require data")
+                console.log("pls fill the require data")
+                alert("pls fill the require data")
                 return false
             }
 
             const res = await axios.post("http://localhost:3000/users", form)
             console.log(res.data)
-            toast.success("Registered user successfully..")
+            alert("Registered user successfully..")
             redirect("/login")
             setform({
                 id: "",
@@ -59,7 +58,7 @@ function Register() {
 
         } catch (error) {
             console.log("Apd Data not Found..")
-            toast.error("APi data not Found")
+            alert("APi data not Found")
         }
     }
 

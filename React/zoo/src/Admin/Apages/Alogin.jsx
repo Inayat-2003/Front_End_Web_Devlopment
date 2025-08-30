@@ -10,9 +10,8 @@ import {
     MDBIcon
 }
     from 'mdb-react-ui-kit';
-import { toast } from 'react-toastify';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Alogin() {
 
@@ -46,14 +45,14 @@ function Alogin() {
 
             if(!email.trim() || !password.trim()){
                 console.log("Pls fill the required field..!")
-                toast.error("Pls fill the required field..!")
+                alert("Pls fill the required field..!")
                 return false
             }
 
             const res = await axios.get(`http://localhost:3000/admin?email=${email}`)
             if(res.data.length == 0){
                 console.log("Email does not match..!")
-                toast.error("Email does not match..!")
+                alert("Email does not match..!")
                 return false
             }
 
@@ -64,19 +63,19 @@ function Alogin() {
             // password does match
             if(admin.password !==password){
                 console.log("password does not match..")
-                toast.error("password does not match..")
+                alert("password does not match..")
                 return false
             }
 
             localStorage.setItem("Aid",admin.id)
             localStorage.setItem("Aname",admin.name)
             redirect("/dash")
-            toast.success("Succesfully login..!")
+            alert("Succesfully login..!")
             console.log("Successfully login..")
 
         } catch (error) {
             console.log("api data not Found",error)
-            toast.error("api data not found.")
+            alert("api data not found.")
         }
     }
 
@@ -96,8 +95,8 @@ function Alogin() {
 
                                     <MDBInput value={form.email} onChange={getchnage} name='email' wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Email address' id='formControlLg' type='email' size="lg" />
                                     <MDBInput value={form.password} onChange={getchnage} name='password' wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Password' id='formControlLg' type='password' size="lg" />
-
-                                    <MDBBtn outline className='mx-2 px-5' color='red' size='lg'>
+                                   <h5><Link to="/login">User</Link></h5>
+                                    <MDBBtn outline className='mx-2 px-5' color='light' size='lg'>
                                         Login
                                     </MDBBtn>
 

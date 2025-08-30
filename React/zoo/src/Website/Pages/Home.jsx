@@ -47,13 +47,13 @@ function Home() {
                         <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div className="owl-carousel header-carousel">
                                 <div className="owl-carousel-item">
-                                    <img className="img-fluid" src="https://images.pexels.com/photos/9357988/pexels-photo-9357988.jpeg?_gl=1*18fnkay*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIwNTAxJGoxNCRsMCRoMA.." alt="" />
+                                    <img className="img-fluid" src="https://images.pexels.com/photos/9357988/pexels-photo-9357988.jpeg?_gl=1*18fnkay*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIwNTAxJGoxNCRsMCRoMA.." alt="#" />
                                 </div>
                                 <div className="owl-carousel-item">
-                                    <img className="img-fluid" src="https://images.pexels.com/photos/17402462/pexels-photo-17402462.jpeg?_gl=1*hbln4y*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIwNjIwJGo1OSRsMCRoMA.." alt="" />
+                                    <img className="img-fluid" src="https://images.pexels.com/photos/17402462/pexels-photo-17402462.jpeg?_gl=1*hbln4y*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIwNjIwJGo1OSRsMCRoMA.." alt="#" />
                                 </div>
                                 <div className="owl-carousel-item">
-                                    <img className="img-fluid" src="https://images.pexels.com/photos/30234524/pexels-photo-30234524.jpeg?_gl=1*ppzavl*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIwODQ0JGo0NCRsMCRoMA.." alt="" />
+                                    <img className="img-fluid" src="https://images.pexels.com/photos/30234524/pexels-photo-30234524.jpeg?_gl=1*ppzavl*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIwODQ0JGo0NCRsMCRoMA.." alt="#" />
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@ function Home() {
                             </div>
                             <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div className="img-border">
-                                    <img className="img-fluid" src="https://images.pexels.com/photos/16237228/pexels-photo-16237228.jpeg?_gl=1*klc5mp*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIxOTkyJGo1OSRsMCRoMA.." alt />
+                                    <img className="img-fluid" src="https://images.pexels.com/photos/16237228/pexels-photo-16237228.jpeg?_gl=1*klc5mp*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3MTkwMjEkbzE0JGcxJHQxNzUxNzIxOTkyJGo1OSRsMCRoMA.." alt="#" />
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@ function Home() {
                                     <div className="col-12">
                                         <a className="animal-item" href="img/animal-md-1.jpg" data-lightbox="animal">
                                             <div className="position-relative">
-                                                <img className="img-fluid" src="img/animal-md-1.jpg" alt />
+                                                <img className="img-fluid" src="img/animal-md-1.jpg" alt="#" />
                                                 <div className="animal-text p-4">
                                                     <p className="text-white small text-uppercase mb-0">Animal</p>
                                                     <h5 className="text-white mb-0">Elephant</h5>
@@ -254,7 +254,7 @@ function Home() {
                                     <div className="col-12">
                                         <a className="animal-item" href="img/animal-lg-1.jpg" data-lightbox="animal">
                                             <div className="position-relative">
-                                                <img className="img-fluid" src="img/animal-lg-1.jpg" alt />
+                                                <img className="img-fluid" src="img/animal-lg-1.jpg" alt="#" />
                                                 <div className="animal-text p-4">
                                                     <p className="text-white small text-uppercase mb-0">Animal</p>
                                                     <h5 className="text-white mb-0">Elephant</h5>
@@ -269,7 +269,7 @@ function Home() {
                                     <div className="col-12">
                                         <a className="animal-item" href="img/animal-lg-2.jpg" data-lightbox="animal">
                                             <div className="position-relative">
-                                                <img className="img-fluid" src="img/animal-lg-2.jpg" alt />
+                                                <img className="img-fluid" src="img/animal-lg-2.jpg" alt="#" />
                                                 <div className="animal-text p-4">
                                                     <p className="text-white small text-uppercase mb-0">Animal</p>
                                                     <h5 className="text-white mb-0">Elephant</h5>
@@ -280,7 +280,7 @@ function Home() {
                                     <div className="col-12">
                                         <a className="animal-item" href="img/animal-md-2.jpg" data-lightbox="animal">
                                             <div className="position-relative">
-                                                <img className="img-fluid" src="img/animal-md-2.jpg" alt />
+                                                <img className="img-fluid" src="img/animal-md-2.jpg" alt='#' />
                                                 <div className="animal-text p-4">
                                                     <p className="text-white small text-uppercase mb-0">Animal</p>
                                                     <h5 className="text-white mb-0">Elephant</h5>
@@ -295,7 +295,7 @@ function Home() {
                                     <div className="col-12">
                                         <a className="animal-item" href="img/animal-md-3.jpg" data-lightbox="animal">
                                             <div className="position-relative">
-                                                <img className="img-fluid" src="img/animal-md-3.jpg" alt />
+                                                <img className="img-fluid" src="img/animal-md-3.jpg" alt="#" />
                                                 <div className="animal-text p-4">
                                                     <p className="text-white small text-uppercase mb-0">Animal</p>
                                                     <h5 className="text-white mb-0">Elephant</h5>
@@ -306,7 +306,7 @@ function Home() {
                                     <div className="col-12">
                                         <a className="animal-item" href="img/animal-lg-3.jpg" data-lightbox="animal">
                                             <div className="position-relative">
-                                                <img className="img-fluid" src="img/animal-lg-3.jpg" alt />
+                                                <img className="img-fluid" src="img/animal-lg-3.jpg" alt="#" />
                                                 <div className="animal-text p-4">
                                                     <p className="text-white small text-uppercase mb-0">Animal</p>
                                                     <h5 className="text-white mb-0">Elephant</h5>
@@ -408,7 +408,7 @@ function Home() {
                         <div className="row g-4">
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                                 <div className="membership-item position-relative">
-                                    <img className="img-fluid" src="img/animal-lg-1.jpg" alt />
+                                    <img className="img-fluid" src="img/animal-lg-1.jpg" alt="#" />
                                     <h1 className="display-1">01</h1>
                                     <h4 className="text-white mb-3">Popular</h4>
                                     <h3 className="text-primary mb-4">$99.00</h3>
@@ -425,7 +425,7 @@ function Home() {
                             </div>
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                                 <div className="membership-item position-relative">
-                                    <img className="img-fluid" src="img/animal-lg-2.jpg" alt />
+                                    <img className="img-fluid" src="img/animal-lg-2.jpg" alt="#" />
                                     <h1 className="display-1">02</h1>
                                     <h4 className="text-white mb-3">Standard</h4>
                                     <h3 className="text-primary mb-4">$149.00</h3>
@@ -442,7 +442,7 @@ function Home() {
                             </div>
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                                 <div className="membership-item position-relative">
-                                    <img className="img-fluid" src="img/animal-lg-3.jpg" alt />
+                                    <img className="img-fluid" src="img/animal-lg-3.jpg" alt="#" />
                                     <h1 className="display-1">03</h1>
                                     <h4 className="text-white mb-3">Premium</h4>
                                     <h3 className="text-primary mb-4">$199.00</h3>
@@ -454,7 +454,7 @@ function Home() {
                                         <i className="fa fa-check text-primary me-3" />Free animal
                                         exhibition
                                     </p>
-                                    <a className="btn btn-outline-light px-4 mt-3" href>Get Started</a>
+                                    <a className="btn btn-outline-light px-4 mt-3" href="#">Get Started</a>
                                 </div>
                             </div>
                         </div>

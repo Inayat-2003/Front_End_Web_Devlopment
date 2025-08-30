@@ -3,7 +3,6 @@ import Aheader from '../Acommon/Aheader'
 import Anavs from '../Acommon/Anavs'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import { toast } from 'react-toastify'
 
 function Aniadd() {
 
@@ -36,14 +35,14 @@ function Aniadd() {
 
             if (form.type == "" || form.name == "" || form.img == "") {
                 console.log("Pls fill required field...!")
-                toast.error("Pls fill required field...!")
+                alert("Pls fill required field...!")
                 return false
             }
 
             const res = await axios.post("http://localhost:3000/our", form)
             console.log(res.data)
             redirect("/animals")
-            toast.success("Animal Added successfully..!")
+            alert("Animal Added successfully..!")
             setform({
                 id: "",
                 type: "",

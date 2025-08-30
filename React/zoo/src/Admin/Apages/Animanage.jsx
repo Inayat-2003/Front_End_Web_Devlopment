@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Aheader from '../Acommon/Aheader'
 import Anavs from '../Acommon/Anavs'
 import axios from 'axios'
-import { toast } from 'react-toastify'
 import { Link } from 'react-router-dom'
 
 function Animanage() {
@@ -13,7 +12,7 @@ function Animanage() {
         fetchdata()
     }, [])
 
-    // all product
+    // get all animals
     const fetchdata = async () => {
         const res = await axios.get("http://localhost:3000/our")
         // console.log(res.data)
@@ -29,15 +28,13 @@ function Animanage() {
 
     const animal = async (id) => {
         const res = await axios.get(`http://localhost:3000/our/${id}`)
-        console.log(res.data)
         setsingleani(res.data)
     }
 
-    // delete product
+    // delete
     const deleteani = async (id) => {
         const res = await axios.delete(`http://localhost:3000/our/${id}`)
-        // console.log(res.data)
-        toast.success("Data deleted successfully..!")
+        alert("Data deleted successfully..!")
         fetchdata()
     }
 
@@ -71,7 +68,7 @@ function Animanage() {
 
             const res = await axios.put(`http://localhost:3000/our/${edited.id}`, edited)
             // console.log(res.data)
-            toast.success("updated successfullyy..!")
+            alert("updated successfullyy..!")
             fetchdata()
             setupdateani(null)
             setedited({
@@ -83,7 +80,7 @@ function Animanage() {
 
         } catch (error) {
             console.log("Api data not Found", error)
-            toast.error("Api data not Found")
+            alert("Api data not Found")
         }
     }
 
@@ -184,7 +181,7 @@ function Animanage() {
                     <div className="modal-dialog">
                         <div className="modal-content">
                             <div className="modal-header">
-                                <h1 className="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                <h1 className="modal-title fs-5" id="staticBackdropLabel">Animal</h1>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                             </div>
                             <div className="modal-body">
@@ -205,7 +202,6 @@ function Animanage() {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 }

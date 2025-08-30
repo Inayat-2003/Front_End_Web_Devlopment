@@ -90,16 +90,7 @@
       "id": "5",
       "type": "Animal",
       "Aname": "Elephant",
-      "img": "https://images.pexels.com/photos/7122711/pexels-photo-7122711.jpeg?_gl=1*1eh6b2g*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzgwMDg1JGo2MCRsMCRoMA..",
-      "title": "Anima",
-      "name": "Elephan",
-      "undefined": "Animals"
-    },
-    {
-      "id": "6",
-      "type": "Animal",
-      "Aname": "Meerkat",
-      "img": "https://media.istockphoto.com/id/90965972/photo/slender-tailed-meerkats.jpg?s=612x612&w=0&k=20&c=I_ujYMMnO0wWtMuvPrzNS8sqM27iuFN1b3fjp06Tsqo="
+      "img": "https://images.pexels.com/photos/7122711/pexels-photo-7122711.jpeg?_gl=1*1eh6b2g*_ga*MTY1NzI3MzM0NS4xNzQxMDY5MTE2*_ga_8JE65Q40S6*czE3NTE3Nzk1MDkkbzE1JGcxJHQxNzUxNzgwMDg1JGo2MCRsMCRoMA.."
     }
   ],
   "visit": [
@@ -137,6 +128,79 @@
       "id": "7",
       "day": "Sunday",
       "time": "Closed"
+    }
+  ],
+  "service": [
+    {
+      "id": "1",
+      "name": "Car Parking",
+      "image": "https://media.istockphoto.com/id/1305146004/vector/incorrect-or-wrong-parking-with-many-cars.jpg?s=612x612&w=0&k=20&c=zclZPUK6IZhN4Ztzu7uV_9fB0Q9xoO_BZ-tlUn6Zofs=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    },
+    {
+      "id": "2",
+      "name": "Animal Photos",
+      "image": "https://media.istockphoto.com/id/2219043648/vector/a-festive-selfie-shows-a-joyful-girl-with-her-dog-in-a-santa-hat-embodying-christmas-spirit.jpg?s=612x612&w=0&k=20&c=pEVbZ7RACbGpdRe5w0rh_8AFPJ1D-TW_lF1Bar4bHZQ=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    },
+    {
+      "id": "3",
+      "name": "Guide Services",
+      "image": "https://media.istockphoto.com/id/1189168548/vector/tourists-on-a-tour-of-the-city-the-guide-tells-about-the-sights-of-the-country-flat-2d.jpg?s=612x612&w=0&k=20&c=gljsBlar-EsFfFhFW3Gcuvk08bw3oeCrqjiXVllFFEI=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    },
+    {
+      "id": "4",
+      "name": "Food & Beverages",
+      "image": "https://media.istockphoto.com/id/1226555763/vector/food-delivery-neon-banner-design.jpg?s=612x612&w=0&k=20&c=688IHIWtpSaoWjfm6_B0Fq1yc6Mk13RmUrw9ofrT27c=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    },
+    {
+      "id": "5",
+      "name": "Zoo Shopping",
+      "image": "https://media.istockphoto.com/id/1309891849/vector/vector-green-logo-zoo-market-gradient-set-of-alphabet-letters-and-numbers.jpg?s=612x612&w=0&k=20&c=qE7EnjylwTgGMwuRZnnH8xbcUmB9cnVPVtZ8_tbDK1E=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    },
+    {
+      "id": "6",
+      "name": "Free Hi Speed Wi-Fi",
+      "image": "https://media.istockphoto.com/id/1209296298/vector/free-wifi-concept-abstract-low-polygonal-smartphone-with-wi-fi-sign-hotspot-signal-symbol.jpg?s=612x612&w=0&k=20&c=1IzM9VzVGJIwpOoUWjP_n6MZ2-IiAFyb1jMzDCVkz70=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    },
+    {
+      "id": "7",
+      "name": "Play Ground",
+      "image": "https://media.istockphoto.com/id/1216928578/vector/isometric-playground-with-children-yard-with-kids-playing-park-with-sandpit-and-seesaw.jpg?s=612x612&w=0&k=20&c=hqlaIV7Geb32dE9U0GJLy3vZ_xTmJghEtPoEuzgofLY=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    },
+    {
+      "id": "8",
+      "name": "Rest House",
+      "image": "https://media.istockphoto.com/id/1217368803/vector/young-man-relaxing-at-couch-under-air-conditioner.jpg?s=612x612&w=0&k=20&c=YhdtVQrEhLT3H_AMc8-RHJWQk4_Sd-CZk3naMG327hI=",
+      "description": "Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet."
+    }
+  ],
+  "testimonials" : [
+    {
+      "id": 1,
+      "image": "https://www.pexels.com/photo/a-woman-wearing-a-white-long-sleeves-standing-14156554/",
+      "text": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+      "name": "Patient Name",
+      "profession": "Profession"
+    },
+    {
+      "id": 2,
+      "image": "https://www.pexels.com/photo/serious-director-talking-on-cellphone-in-cozy-office-4491476/",
+      "text": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+      "name": "Patient Name",
+      "profession": "Profession"
+    },
+    {
+      "id": 3,
+      "image": "https://www.pexels.com/photo/man-in-suit-sitting-with-cellphone-17739180/",
+      "text": "Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.",
+      "name": "Patient Name",
+      "profession": "Profession"
     }
   ]
 }

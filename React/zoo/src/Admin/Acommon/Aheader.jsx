@@ -42,10 +42,10 @@ function Aheader() {
                 <small>+012 345 6789</small>
               </div>
               <div className="h-100 d-inline-flex align-items-center">
-                <a className="btn btn-sm-square bg-white text-primary me-1" href><i className="fab fa-facebook-f" /></a>
-                <a className="btn btn-sm-square bg-white text-primary me-1" href><i className="fab fa-twitter" /></a>
-                <a className="btn btn-sm-square bg-white text-primary me-1" href><i className="fab fa-linkedin-in" /></a>
-                <a className="btn btn-sm-square bg-white text-primary me-0" href><i className="fab fa-instagram" /></a>
+                <a className="btn btn-sm-square bg-white text-primary me-1" href="#"><i className="fab fa-facebook-f" /></a>
+                <a className="btn btn-sm-square bg-white text-primary me-1" href="#"><i className="fab fa-twitter" /></a>
+                <a className="btn btn-sm-square bg-white text-primary me-1" href="#"><i className="fab fa-linkedin-in" /></a>
+                <a className="btn btn-sm-square bg-white text-primary me-0" href="#"><i className="fab fa-instagram" /></a>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ function Aheader() {
         {/* Navbar Start */}
 
         <nav
-          class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+          className="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
           data-wow-delay="0.1s"
         >
           <Link to="/dash" className="navbar-brand p-0">
@@ -68,8 +68,7 @@ function Aheader() {
             <div className="navbar-nav ms-auto">
               <NavLink to="/dash" className="nav-item nav-link">Dashboard</NavLink>
               <NavLink to="/animanage" className="nav-item nav-link">Animals</NavLink>
-              <NavLink to="/services" className="nav-item nav-link">Services</NavLink>
-              <NavLink to="/contact" className="nav-item nav-link">Contact</NavLink>
+              <NavLink to="/servicemanage" className="nav-item nav-link">Service</NavLink>
             </div>
             {(() => {
               if (localStorage.getItem("Aid")) {

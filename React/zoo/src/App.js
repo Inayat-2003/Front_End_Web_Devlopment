@@ -14,6 +14,8 @@ import Animanage from './Admin/Apages/Animanage';
 import Alogin from './Admin/Apages/Alogin';
 import Login from './Website/Pages/Login';
 import Register from './Website/Pages/Register';
+import Servicemanage from './Admin/Apages/Servicemanage';
+import Aniadd from './Admin/Apages/Aniadd';
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
         {/* Admin path */}
         <Route path="/dash" element={<Dashboard/>}/>
         <Route path='/animanage' element={<Animanage/>} />
+        <Route path='/aniadd' element={<Aniadd/>} />
+        <Route path='/servicemanage' element={<Servicemanage/>} />
         <Route path='/alogin' element={<Alogin/>}/>
       </Routes>
     </div>

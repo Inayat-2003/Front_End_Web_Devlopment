@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -20,27 +21,25 @@ function Footer() {
                   <i className="fa fa-envelope me-3" />info@example.com
                 </p>
                 <div className="d-flex pt-2">
-                  <a className="btn btn-outline-light btn-social" href><i className="fab fa-twitter" /></a>
-                  <a className="btn btn-outline-light btn-social" href><i className="fab fa-facebook-f" /></a>
-                  <a className="btn btn-outline-light btn-social" href><i className="fab fa-youtube" /></a>
-                  <a className="btn btn-outline-light btn-social" href><i className="fab fa-linkedin-in" /></a>
+                  <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-twitter" /></a>
+                  <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-facebook-f" /></a>
+                  <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-youtube" /></a>
+                  <a className="btn btn-outline-light btn-social" href="#"><i className="fab fa-linkedin-in" /></a>
                 </div>
               </div>
               <div className="col-lg-3 col-md-6">
                 <h5 className="text-light mb-4">Quick Links</h5>
-                <a className="btn btn-link" href>About Us</a>
-                <a className="btn btn-link" href>Contact Us</a>
-                <a className="btn btn-link" href>Our Services</a>
-                <a className="btn btn-link" href>Terms &amp; Condition</a>
-                <a className="btn btn-link" href>Support</a>
+                <NavLink to="/about" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">About Us</NavLink>
+                <NavLink to="/contact" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">Contact Us</NavLink>
+                <NavLink to="/services" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">Our Services</NavLink>
+                <NavLink to="/contact" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">Support</NavLink>
               </div>
               <div className="col-lg-3 col-md-6">
                 <h5 className="text-light mb-4">Popular Links</h5>
-                <a className="btn btn-link" href>About Us</a>
-                <a className="btn btn-link" href>Contact Us</a>
-                <a className="btn btn-link" href>Our Services</a>
-                <a className="btn btn-link" href>Terms &amp; Condition</a>
-                <a className="btn btn-link" href>Support</a>
+                <NavLink to="/our" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">Our Animals</NavLink>
+                <NavLink to="/membership" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">Membership</NavLink>
+                <NavLink to="/visiting" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">Visiting Hours</NavLink>
+                <NavLink to="/testimonial" onClick={() => window.scrollTo(0, 0)} className="btn btn-link">Testimonial</NavLink>
               </div>
               <div className="col-lg-3 col-md-6">
                 <h5 className="text-light mb-4">Newsletter</h5>

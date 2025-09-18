@@ -7,18 +7,6 @@ import axios from 'axios'
 
 function About() {
 
-    const [clients, setclients] = useState([])
-
-    useEffect(() => {
-        fetchdata()
-    }, [])
-
-
-    const fetchdata = async () => {
-        const res = await axios.get("http://localhost:3000/testimonials")
-        setclients(res.data)
-    }
-
     return (
         <div>
             <Helmet>

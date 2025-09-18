@@ -49,17 +49,17 @@ function Our() {
                             </h1>
                         </div>
                         <div className="col-lg-6 text-lg-end">
-                            <a className="btn btn-primary py-3 px-5" href>Explore More Animals</a>
+                            <a className="btn btn-primary py-3 px-5" href="#">Explore More Animals</a>
                         </div>
                     </div>
                 </div>
             </div>
             {/* Animal End */}
-            <div class="anicontainer">
+            <div className="anicontainer">
             {
-                animal && animal.map((data) => {
+                animal && animal.map((data, index) => {
                     return (
-                    <div className="card">
+                    <div className="card" key={index}>
                         <a className="animal-item" href={data.img} data-lightbox="animal">
                             <div className="position-relative">
                                 <img className="img-fluid" src={data.img} alt="img" />

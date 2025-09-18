@@ -36,7 +36,7 @@ function Home() {
                                     Enjoy Wonderful Day With Your Family
                                 </h1>
                                 <div className="d-flex align-items-center pt-4 animated slideInDown">
-                                    <a href className="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Read More</a>
+                                    <a href="#" className="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">Read More</a>
                                     <button type="button" className="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                                         <span />
                                     </button>
@@ -234,7 +234,7 @@ function Home() {
                                 </h1>
                             </div>
                             <div className="col-lg-6 text-lg-end">
-                                <a className="btn btn-primary py-3 px-5" href>Explore More Animals</a>
+                                <a className="btn btn-primary py-3 px-5" href="#">Explore More Animals</a>
                             </div>
                         </div>
                         <div className="row g-4">
@@ -402,7 +402,7 @@ function Home() {
                                 </h1>
                             </div>
                             <div className="col-lg-6 text-lg-end">
-                                <a className="btn btn-primary py-3 px-5" href>Special Pricing</a>
+                                <a className="btn btn-primary py-3 px-5" href="#">Special Pricing</a>
                             </div>
                         </div>
                         <div className="row g-4">
@@ -420,7 +420,7 @@ function Home() {
                                         <i className="fa fa-check text-primary me-3" />Free animal
                                         exhibition
                                     </p>
-                                    <a className="btn btn-outline-light px-4 mt-3" href>Get Started</a>
+                                    <a className="btn btn-outline-light px-4 mt-3" href="#">Get Started</a>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -437,7 +437,7 @@ function Home() {
                                         <i className="fa fa-check text-primary me-3" />Free animal
                                         exhibition
                                     </p>
-                                    <a className="btn btn-outline-light px-4 mt-3" href>Get Started</a>
+                                    <a className="btn btn-outline-light px-4 mt-3" href="#">Get Started</a>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">

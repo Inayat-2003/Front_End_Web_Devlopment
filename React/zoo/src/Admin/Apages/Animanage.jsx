@@ -112,7 +112,7 @@ function Animanage() {
                                         <th scope="row">{data.id}</th>
                                         <td>{data.Aname}</td>
                                         <td>
-                                            <img src={data.img} style={{ width: "70px", height: "70px" }} alt="" />
+                                            <img src={data.img} style={{ width: "70px", height: "70px" }} alt="#" />
                                         </td>
                                         <td>{data.type}</td>
                                         <td>

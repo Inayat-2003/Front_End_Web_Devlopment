@@ -42,8 +42,8 @@ function Visiting() {
                         <div className="col-md-6 wow fadeIn" data-wow-delay="0.3s">
                             <h1 className="display-6 text-white mb-5">Visiting Hours</h1>
                             {
-                                visit && visit.map((data) => {
-                                    return (<ul className="list-group list-group-flush">
+                                visit && visit.map((data, index) => {
+                                    return (<ul className="list-group list-group-flush" key={index}>
                                         <li className="list-group-item">
                                             <span className="me-3">{data.day}</span>
                                             <span>{data.time}</span>

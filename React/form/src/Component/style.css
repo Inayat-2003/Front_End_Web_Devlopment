@@ -1,0 +1,82 @@
+  body{
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        background: #f0f2f5;
+      }
+
+      .container {
+        background: white;
+        padding: 20px 20px;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2{
+        text-align: center;
+        color: #333;
+      }
+
+      .form {
+        margin-bottom: 15px;
+        position: relative;
+      }
+
+      .form input {
+        width: 100%;
+        padding: 10px 10px 10px 35px;
+        box-sizing: border-box;
+      }
+
+      .form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 5px;
+      }
+
+      .gender {
+        display: flex;
+        gap: 10px;
+      }
+
+      .gender label{
+        display: flex;
+        margin-right: 10px;
+      }
+
+      button{
+        padding: 10px;
+        width: 100%;
+        background-color: #28a745;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover{
+        background-color: #218838;
+      }
+
+      table{
+        margin-top: 50px;
+        width: 100%;
+        border: solid black;
+        text-align: center;
+      }
+
+      th{
+        background-color: aliceblue;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      td{
+        padding: 10px;
+        text-align: left;
+      }
